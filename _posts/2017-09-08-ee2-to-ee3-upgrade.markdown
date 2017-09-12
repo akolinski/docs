@@ -72,11 +72,11 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 You need to copy out this files if you want to be able to destroy these newly created scripts or setup a provising script in order to get it to work.
 
-## Lets do this for reals - EE2 to EE3 upgrade
+## Upgrading from ExpressionEngine 2 to ExpressionEngine3
 
-When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a couple of things to do:
+When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do:
 
-### Uninstall these modules
+### 1. Uninstall these modules and delete folders
 
 I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM's to this new EE2 instance. This is because currently we cannot remove ACER Workflow from the current website.
 
@@ -84,7 +84,11 @@ I think this step is only needed if we actually bring files from the EE2 instanc
 - NSM Live Look
 - Sitemap
 
-## Resources
+### 2. next steps
+
+
+
+#### Resources
 
 [Upgrading from ExpressionEngine 2][ee2-upgrade]
 
