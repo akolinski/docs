@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000"
 twitter_username: akolinski
 github_username:  akolinski
+relative_url: https://akolinski.github.io/docs/
 # Build settings
 markdown: kramdown
 theme: minima
