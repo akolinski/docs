@@ -85,13 +85,11 @@ I think this step is only needed if we actually bring files from the EE2 instanc
 - NSM Live Look
 - Sitemap
 
-### 2. next steps
+### 2. Follow steps from EE docs
 
+[Follow the steps from 1 to point 6][ee2-upgrade]
 
-
-#### Resources
-
-[Upgrading from ExpressionEngine 2][ee2-upgrade]
+Boom, we should now have EE3 running.
 
 [ee2-upgrade]: https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html
 [ee-conversion]:   https://docs.expressionengine.com/latest/development/conversion/index.html
