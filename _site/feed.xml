@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io/" rel="alternate" type="text/html" /><updated>2017-09-12T15:21:29+10:00</updated><id>https://akolinski.github.io/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
+</subtitle><entry><title type="html">EE2 to EE3 upgrade</title><link href="https://akolinski.github.io/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>https://akolinski.github.io/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="https://akolinski.github.io/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;p&gt;Okay lets start upgrading EE2 to EE3.&lt;/p&gt;
+
+&lt;p&gt;Currently we have two instances running.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;EE2 instance&lt;/li&gt;
+  &lt;li&gt;A fresh EE3 instance&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;ee2-instance&quot;&gt;EE2 instance&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Put current EE2 instance into a new vagrant box with current database.&lt;/li&gt;
+  &lt;li&gt;Libraries / core / Environment.php throwing errors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We had to change the path in these files&lt;/p&gt;
+
+&lt;p&gt;public/libraries/core/Environment.php
+modified:   public/libraries/core/exception/ArgumentException.php
+modified:   public/system/expressionengine/config/config.php
+modified:   public/system/expressionengine/config/database.php
+modified:   public/system/expressionengine/third_party/ep_better_workflow/libraries/ep_status_transition.php&lt;/p&gt;
+
+&lt;p&gt;from&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('core/Environment.php');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('libraries/core/Environment.php');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;edit-configphp&quot;&gt;Edit config.php&lt;/h2&gt;
+
+&lt;p&gt;Update the stash_static_basepath &amp;amp;&amp;amp; stash_file_basepath in config.php&lt;/p&gt;
+
+&lt;p&gt;from&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/local/www-shared/ee-acer/assets/templates/stash-cache/';
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;assets/templates/stash-cache/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;so-we-are-going-to-rewrite-this-so-that-its-super-simple&quot;&gt;So we are going to rewrite this so that it’s super simple.&lt;/h2&gt;
+
+&lt;h2 id=&quot;vagrant-box&quot;&gt;Vagrant box&lt;/h2&gt;
+
+&lt;p&gt;Create a new virtual host.&lt;/p&gt;
+
+&lt;p&gt;Sites available show the conf.
+Sites enabled are sim links that enable the sites available.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant@scotchbox:~$ sudo su
+root@scotchbox:/home/vagrant# cd /etc/apache2/
+root@scotchbox:/etc/apache2# ll
+drwxr-xr-x   2 root root  4096 Nov  3  2015 sites-available/
+drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You need to copy out this files if you want to be able to destroy these newly created scripts or setup a provising script in order to get it to work.&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrading-from-expressionengine-2-to-expressionengine3&quot;&gt;Upgrading from ExpressionEngine 2 to ExpressionEngine3&lt;/h2&gt;
+
+&lt;p&gt;When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-uninstall-these-modules-and-delete-folders&quot;&gt;1. Uninstall these modules and delete folders&lt;/h3&gt;
+
+&lt;p&gt;I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM’s to this new EE2 instance. This is because currently we cannot remove ACER Workflow from the current website.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ACER Workflow&lt;/li&gt;
+  &lt;li&gt;NSM Live Look&lt;/li&gt;
+  &lt;li&gt;Sitemap&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-next-steps&quot;&gt;2. next steps&lt;/h3&gt;
+
+&lt;h4 id=&quot;resources&quot;&gt;Resources&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html&quot;&gt;Upgrading from ExpressionEngine 2&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>
