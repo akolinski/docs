@@ -111,10 +111,11 @@ New image dimensions: 490px width 490px height |
 
 Page speed score (Desktop): 53/100 |
 
+#### Testing image in PageSpeed
 
-#### SCORE OF 96/100 WITHOUT ANY IMAGES BELOW
+We are testing the threshold in Google to try and understand how they give recommendations on optimizing images. Currently the sites score sits at 96/100.
 
-#### Image test 1000w x 1000h = 525kb
+- Image test 1000w x 1000h = 525kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 66/100
 
@@ -122,7 +123,7 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg m
 
 > Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).
 
-#### Image test 500w x 500h - no compression = 199kb
+- Image test 500w x 500h - no compression = 199kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100
 
@@ -130,7 +131,7 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg mad
 
 > Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).
 
-#### Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
+- Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 84/100
 
@@ -138,17 +139,25 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compr
 
 > Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).
 
-#### Image test 1000w x 1000h - Compressed to file size 55kb
+- Image test 1000w x 1000h - Compressed to file size 55kb
 
-Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to
+Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to 89 / 100
 
-<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test">
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test"> -->
+
+> No image recommendations
+
+#### What we found
+
+Even if you compress and image down by the percentage needed recommended by google, it will still complain about scaling images down to needed size.
 
 ### Conclusion
 
-I found that optimizing images using [tinyjpg] over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.
+We found that optimizing images using [tinyjpg] over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.
 
-Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the [image checklist] will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
+Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually.
+
+Using the [image checklist] will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
 
 ## Reading
 

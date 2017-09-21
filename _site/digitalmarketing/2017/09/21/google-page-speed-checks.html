@@ -255,9 +255,13 @@ For example: 343 x 2 = 686 height</p>
   </tbody>
 </table>
 
-<h4 id="score-of-96100-without-any-images-below">SCORE OF 96/100 WITHOUT ANY IMAGES BELOW</h4>
+<h4 id="testing-image-in-pagespeed">Testing image in PageSpeed</h4>
 
-<h4 id="image-test-1000w-x-1000h--525kb">Image test 1000w x 1000h = 525kb</h4>
+<p>We are testing the threshold in Google to try and understand how they give recommendations on optimizing images. Currently the sites score sits at 96/100.</p>
+
+<ul>
+  <li>Image test 1000w x 1000h = 525kb</li>
+</ul>
 
 <p>Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 66/100</p>
 
@@ -267,7 +271,9 @@ For example: 343 x 2 = 686 height</p>
   <p>Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).</p>
 </blockquote>
 
-<h4 id="image-test-500w-x-500h---no-compression--199kb">Image test 500w x 500h - no compression = 199kb</h4>
+<ul>
+  <li>Image test 500w x 500h - no compression = 199kb</li>
+</ul>
 
 <p>Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100</p>
 
@@ -277,7 +283,9 @@ For example: 343 x 2 = 686 height</p>
   <p>Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).</p>
 </blockquote>
 
-<h4 id="image-test-1000w-x-1000h---compressed-to-file-size-of-500-by-500-image--201kb">Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb</h4>
+<ul>
+  <li>Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb</li>
+</ul>
 
 <p>Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 84/100</p>
 
@@ -287,17 +295,29 @@ For example: 343 x 2 = 686 height</p>
   <p>Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).</p>
 </blockquote>
 
-<h4 id="image-test-1000w-x-1000h---compressed-to-file-size-55kb">Image test 1000w x 1000h - Compressed to file size 55kb</h4>
+<ul>
+  <li>Image test 1000w x 1000h - Compressed to file size 55kb</li>
+</ul>
 
-<p>Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to</p>
+<p>Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to 89 / 100</p>
 
-<p><img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test" /></p>
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test"> -->
+
+<blockquote>
+  <p>No image recommendations</p>
+</blockquote>
+
+<h4 id="what-we-found">What we found</h4>
+
+<p>Even if you compress and image down by the percentage needed recommended by google, it will still complain about scaling images down to needed size.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>I found that optimizing images using <a href="https://tinyjpg.com/">tinyjpg</a> over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.</p>
+<p>We found that optimizing images using <a href="https://tinyjpg.com/">tinyjpg</a> over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.</p>
 
-<p>Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the <a href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">image checklist</a> will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?</p>
+<p>Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually.</p>
+
+<p>Using the <a href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">image checklist</a> will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?</p>
 
 <h2 id="reading">Reading</h2>
 

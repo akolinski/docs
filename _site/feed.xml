@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-22T08:50:27+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-22T09:21:09+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
 </subtitle><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;p&gt;The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
@@ -215,9 +215,13 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h4 id=&quot;score-of-96100-without-any-images-below&quot;&gt;SCORE OF 96/100 WITHOUT ANY IMAGES BELOW&lt;/h4&gt;
+&lt;h4 id=&quot;testing-image-in-pagespeed&quot;&gt;Testing image in PageSpeed&lt;/h4&gt;
 
-&lt;h4 id=&quot;image-test-1000w-x-1000h--525kb&quot;&gt;Image test 1000w x 1000h = 525kb&lt;/h4&gt;
+&lt;p&gt;We are testing the threshold in Google to try and understand how they give recommendations on optimizing images. Currently the sites score sits at 96/100.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Image test 1000w x 1000h = 525kb&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 66/100&lt;/p&gt;
 
@@ -227,7 +231,9 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
   &lt;p&gt;Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;image-test-500w-x-500h---no-compression--199kb&quot;&gt;Image test 500w x 500h - no compression = 199kb&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Image test 500w x 500h - no compression = 199kb&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100&lt;/p&gt;
 
@@ -237,7 +243,9 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
   &lt;p&gt;Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;image-test-1000w-x-1000h---compressed-to-file-size-of-500-by-500-image--201kb&quot;&gt;Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 84/100&lt;/p&gt;
 
@@ -247,17 +255,29 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
   &lt;p&gt;Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;image-test-1000w-x-1000h---compressed-to-file-size-55kb&quot;&gt;Image test 1000w x 1000h - Compressed to file size 55kb&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Image test 1000w x 1000h - Compressed to file size 55kb&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to&lt;/p&gt;
+&lt;p&gt;Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to 89 / 100&lt;/p&gt;
 
-&lt;p&gt;&lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/p&gt;
+&lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No image recommendations&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;what-we-found&quot;&gt;What we found&lt;/h4&gt;
+
+&lt;p&gt;Even if you compress and image down by the percentage needed recommended by google, it will still complain about scaling images down to needed size.&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
-&lt;p&gt;I found that optimizing images using &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.&lt;/p&gt;
+&lt;p&gt;We found that optimizing images using &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.&lt;/p&gt;
 
-&lt;p&gt;Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the &lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt; will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?&lt;/p&gt;
+&lt;p&gt;Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually.&lt;/p&gt;
+
+&lt;p&gt;Using the &lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt; will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?&lt;/p&gt;
 
 &lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
 
