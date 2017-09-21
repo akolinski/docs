@@ -132,11 +132,11 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg mad
 
 #### Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
 
-Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 92/100
+Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 84/100
 
-<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg" alt="test">
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg" alt="test"> -->
 
->
+> Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).
 
 ### Conclusion
 
