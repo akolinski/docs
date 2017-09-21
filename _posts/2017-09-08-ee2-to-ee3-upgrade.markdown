@@ -85,6 +85,8 @@ I think this step is only needed if we actually bring files from the EE2 instanc
 - NSM Live Look
 - Sitemap
 
+* Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren't included in accordance to this spreadsheet: https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing
+
 ### 2. Follow steps from EE docs
 
 [Follow the steps from 1 to point 6][ee2-upgrade]
