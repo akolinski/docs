@@ -111,6 +111,10 @@ New image dimensions: 490px width 490px height |
 
 Page speed score (Desktop): 53/100 |
 
+#### Image test 1000w x 1000h = 500kb
+
+![Test image](https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg "Test image") 
+
 ### Conclusion
 
 Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the [image checklist] will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
