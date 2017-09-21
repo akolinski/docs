@@ -120,7 +120,11 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg m
 
 #### Image test 500w x 500h - no compression = 199kb
 
-![Test image](https://makeaweb.com.au/images/uploads/os-test-500x500.jpg "Test image")
+Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100
+
+#### Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
+
+![Test image](https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg "Test image")
 
 ### Conclusion
 
