@@ -126,7 +126,11 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg mad
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 92/100
 
+![alt text](https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg "Logo Title Text 1")
+
 ### Conclusion
+
+I found that optimizing images using [tinyjpg] over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.
 
 Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the [image checklist] will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
 
