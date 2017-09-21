@@ -111,9 +111,7 @@ New image dimensions: 490px width 490px height |
 
 Page speed score (Desktop): 53/100 |
 
-#### Image test 1000w x 1000h = 500kb
 
-![Test image](https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg "Test image") 
 
 ### Conclusion
 
