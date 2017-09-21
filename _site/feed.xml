@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-21T15:49:33+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-21T16:06:21+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
 </subtitle><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;p&gt;The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
@@ -227,7 +227,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;h4 id=&quot;image-test-1000w-x-1000h---compressed-to-file-size-of-500-by-500-image--201kb&quot;&gt;Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg&quot; alt=&quot;Test image&quot; title=&quot;Test image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 92/100&lt;/p&gt;
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
