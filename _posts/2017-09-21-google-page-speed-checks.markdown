@@ -6,7 +6,7 @@ categories: digitalmarketing
 url: google-page-speed-checks
 ---
 
-The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
+> The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
 
 [Google PageSpeed Insights]
 
@@ -55,12 +55,65 @@ Are you optimizing a photo, screenshot, or a similar image asset? Use JPEG.
 
 As a result, one of the simplest and most effective image optimization techniques is to ensure that we are not shipping any more pixels than needed to display the asset at its intended size in the browser. Sounds simple, right? Unfortunately, most pages fail this test for many of their image assets: typically, they ship larger assets and rely on the browser to rescale them - which also consumes extra CPU resources - and display them at a lower resolution.
 
-## Optimize images
+## Testing
 
-1. Image test scenario 1
+### Optimize images
 
-Original file size: 311 KB
-Page speed score (Desktop): 50/100
+[tinyjpg]
+[tinypngpg]
+
+#### Image test scenario 1 (JPG) (Square image)
+
+
+Original file size: 311 KB |
+
+Original image dimensions: 1440px width 1440px height |
+
+Page speed score (Desktop): 50/100 |
+
+
+Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.
+
+For example: 245 x 2 = 490 width
+
+Use photoshop on the original image. Image > Image size. Enter the new width and make sure the height automatically adjusts to scale the image. Use the save for web option. Save out the file at 100% quality with no options selected.
+
+Then use [tinyjpg] to apply lossy and lossless compression on the file.
+
+New file size: 41 KB |
+
+New image dimensions: 490px width 490px height |
+
+Page speed score (Desktop): 51/100 |
+
+#### Image test scenario 2 (JPG) (Long image)
+
+
+Original file size: 356 KB |
+
+Original image dimensions: 1440px width 2016px height |
+
+Page speed score (Desktop): 51/100 |
+
+
+Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height
+
+For example: 245 x 2 = 490 width
+For example: 343 x 2 = 686 height
+
+Use photoshop and create a new file with the dimensions 490px width and 686px height. Drag the original image inside photoshop and scale the image without losing quality in the new dimensions. Use the save for web option. Save out the file at 100% quality with no options selected.
+
+Then use [tinyjpg] to apply lossy and lossless compression on the file.
+
+New file size: 102 KB |
+
+New image dimensions: 490px width 490px height |
+
+Page speed score (Desktop): 53/100 |
+
+### Conclusion
+
+Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the [image checklist] will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
 
 ## Reading
 
@@ -78,6 +131,8 @@ Page speed score (Desktop): 50/100
 
 [compression techniques]
 
+[image checklist]
+
 [Google PageSpeed Insights]: https://developers.google.com/speed/pagespeed/insights/
 [Image Optimization]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization
 [Lossless vs lossy image compression]: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization
@@ -85,3 +140,6 @@ Page speed score (Desktop): 50/100
 [lossy]:https://en.wikipedia.org/wiki/Lossy_compression
 [lossless]:https://en.wikipedia.org/wiki/Lossless_compression
 [compression techniques]:https://developers.google.com/speed/webp/docs/compression
+[tinyjpg]:https://tinyjpg.com/
+[tinypngpg]:https://tinypng.com/
+[image checklist]:/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html

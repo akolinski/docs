@@ -71,7 +71,9 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</p>
+    <blockquote>
+  <p>The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</p>
+</blockquote>
 
 <p><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a></p>
 
@@ -130,14 +132,132 @@
 
 <p>As a result, one of the simplest and most effective image optimization techniques is to ensure that we are not shipping any more pixels than needed to display the asset at its intended size in the browser. Sounds simple, right? Unfortunately, most pages fail this test for many of their image assets: typically, they ship larger assets and rely on the browser to rescale them - which also consumes extra CPU resources - and display them at a lower resolution.</p>
 
-<h2 id="optimize-images">Optimize images</h2>
+<h2 id="testing">Testing</h2>
 
-<ol>
-  <li>Image test scenario 1</li>
-</ol>
+<h3 id="optimize-images">Optimize images</h3>
 
-<p>Original file size: 311 KB
-Page speed score (Desktop): 50/100</p>
+<p><a href="https://tinypng.com/">tinyjpg</a></p>
+
+<h4 id="image-test-scenario-1-jpg-square-image">Image test scenario 1 (JPG) (Square image)</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Original file size: 311 KB</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Original image dimensions: 1440px width 1440px height</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Page speed score (Desktop): 50/100</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.</p>
+
+<p>For example: 245 x 2 = 490 width</p>
+
+<p>Use photoshop on the original image. Image &gt; Image size. Enter the new width and make sure the height automatically adjusts to scale the image. Use the save for web option. Save out the file at 100% quality with no options selected.</p>
+
+<p>Then use <a href="https://tinyjpg.com/">tinyjpg</a> to apply lossy and lossless compression on the file.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>New file size: 41 KB</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>New image dimensions: 490px width 490px height</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Page speed score (Desktop): 51/100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="image-test-scenario-2-jpg-long-image">Image test scenario 2 (JPG) (Long image)</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Original file size: 356 KB</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Original image dimensions: 1440px width 2016px height</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Page speed score (Desktop): 51/100</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height</p>
+
+<p>For example: 245 x 2 = 490 width
+For example: 343 x 2 = 686 height</p>
+
+<p>Use photoshop and create a new file with the dimensions 490px width and 686px height. Drag the original image inside photoshop and scale the image without losing quality in the new dimensions. Use the save for web option. Save out the file at 100% quality with no options selected.</p>
+
+<p>Then use <a href="https://tinyjpg.com/">tinyjpg</a> to apply lossy and lossless compression on the file.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>New file size: 102 KB</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>New image dimensions: 490px width 490px height</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Page speed score (Desktop): 53/100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually. Using the <a href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">image checklist</a> will help identify what you should be doing / make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?</p>
 
 <h2 id="reading">Reading</h2>
 
@@ -154,6 +274,8 @@ Page speed score (Desktop): 50/100</p>
 <p><a href="https://en.wikipedia.org/wiki/Lossless_compression">lossless</a></p>
 
 <p><a href="https://developers.google.com/speed/webp/docs/compression">compression techniques</a></p>
+
+<p><a href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">image checklist</a></p>
 
 
   </div>
