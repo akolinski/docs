@@ -138,6 +138,12 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compr
 
 > Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).
 
+#### Image test 1000w x 1000h - Compressed to file size 55kb
+
+Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to
+
+<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test">
+
 ### Conclusion
 
 I found that optimizing images using [tinyjpg] over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.
