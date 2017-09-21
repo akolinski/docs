@@ -118,15 +118,19 @@ Page speed score (Desktop): 53/100 |
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 71/100
 
+<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg" alt="test">
+
 #### Image test 500w x 500h - no compression = 199kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100
+
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-500x500.jpg" alt="test"> -->
 
 #### Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 92/100
 
-![alt text](https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg "Logo Title Text 1")
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg" alt="test"> -->
 
 ### Conclusion
 
