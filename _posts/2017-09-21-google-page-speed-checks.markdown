@@ -116,15 +116,17 @@ Page speed score (Desktop): 53/100 |
 
 #### Image test 1000w x 1000h = 525kb
 
-Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 71/100
+Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 66/100
 
-<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg" alt="test">
+<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg" alt="test"> -->
+
+> Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).
 
 #### Image test 500w x 500h - no compression = 199kb
 
 Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100
 
-<!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-500x500.jpg" alt="test"> -->
+<img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-500x500.jpg" alt="test">
 
 #### Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
 
