@@ -112,6 +112,13 @@ New image dimensions: 490px width 490px height |
 Page speed score (Desktop): 53/100 |
 
 
+#### SCORE OF 96/100 WITHOUT ANY IMAGES BELOW
+
+#### Image test 1000w x 1000h = 525kb
+
+Adding this image made my PageSpeed go down from 96/100 to 71/100
+
+![Test image](https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg "Test image")
 
 ### Conclusion
 
