@@ -319,6 +319,31 @@ For example: 343 x 2 = 686 height</p>
 
 <p>Using the <a href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">image checklist</a> will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?</p>
 
+<h2 id="enable-compression">Enable compression</h2>
+
+<p>Make sure any files that are loaded externally or internally are compressed.</p>
+
+<h2 id="minify-javascript">Minify JavaScript</h2>
+
+<p>Make sure any JavaScript that is being used is using the Minified version.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Combined performance gain from enabling compression and minifying javascript for one file</td>
+      <td>79/100 to 85/100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="eliminate-render-blocking-javascript-and-css-in-above-the-fold-content">Eliminate render-blocking JavaScript and CSS in above-the-fold content</h2>
+
+<p>There is no real fix for this because we can’t simply remove css that we need. We do not want to inline CSS either.</p>
+
+<h2 id="minify-html">Minify HTML</h2>
+
+<p>We should be able to do this, we need to check whether jQuery functionality is still working once implemented.</p>
+
 <h2 id="reading">Reading</h2>
 
 <p><a href="https://developers.google.com/speed/pagespeed/insights/">Google PageSpeed Insights</a></p>

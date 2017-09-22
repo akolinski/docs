@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-22T09:21:09+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-22T15:25:33+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
 </subtitle><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;p&gt;The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
@@ -278,6 +278,31 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 &lt;p&gt;Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually.&lt;/p&gt;
 
 &lt;p&gt;Using the &lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt; will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?&lt;/p&gt;
+
+&lt;h2 id=&quot;enable-compression&quot;&gt;Enable compression&lt;/h2&gt;
+
+&lt;p&gt;Make sure any files that are loaded externally or internally are compressed.&lt;/p&gt;
+
+&lt;h2 id=&quot;minify-javascript&quot;&gt;Minify JavaScript&lt;/h2&gt;
+
+&lt;p&gt;Make sure any JavaScript that is being used is using the Minified version.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Combined performance gain from enabling compression and minifying javascript for one file&lt;/td&gt;
+      &lt;td&gt;79/100 to 85/100&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;eliminate-render-blocking-javascript-and-css-in-above-the-fold-content&quot;&gt;Eliminate render-blocking JavaScript and CSS in above-the-fold content&lt;/h2&gt;
+
+&lt;p&gt;There is no real fix for this because we can’t simply remove css that we need. We do not want to inline CSS either.&lt;/p&gt;
+
+&lt;h2 id=&quot;minify-html&quot;&gt;Minify HTML&lt;/h2&gt;
+
+&lt;p&gt;We should be able to do this, we need to check whether jQuery functionality is still working once implemented.&lt;/p&gt;
 
 &lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
 

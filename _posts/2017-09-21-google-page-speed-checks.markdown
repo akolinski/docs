@@ -159,6 +159,24 @@ Following the test in scenario 1 and 2 will give an improvement to page speed. I
 
 Using the [image checklist] will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn't constitute meaning, what purpose does that image really have?
 
+## Enable compression
+
+Make sure any files that are loaded externally or internally are compressed.
+
+## Minify JavaScript
+
+Make sure any JavaScript that is being used is using the Minified version.
+
+Combined performance gain from enabling compression and minifying javascript for one file | 79/100 to 85/100
+
+## Eliminate render-blocking JavaScript and CSS in above-the-fold content
+
+There is no real fix for this because we can't simply remove css that we need. We do not want to inline CSS either.
+
+## Minify HTML
+
+We should be able to do this, we need to check whether jQuery functionality is still working once implemented. 
+
 ## Reading
 
 [Google PageSpeed Insights]
