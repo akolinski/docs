@@ -175,7 +175,7 @@ There is no real fix for this because we can't simply remove css that we need. W
 
 ## Minify HTML
 
-We should be able to do this, we need to check whether jQuery functionality is still working once implemented. 
+We can minify stash embeds without much of a problem. However to remove the suggested message from Google we need to minify the whole template. We should be able to do this, we need to check whether jQuery functionality is still working once implemented. We had a couple of jQuery validation problems with jQuery in script tags in templates. JSLint was used to try to resolve this issue but to no avail. In page jQuery was abstracted to a page specific javascript file using Uglify. We had a score improve from 84/100 to 86/100. 
 
 ## Reading
 
