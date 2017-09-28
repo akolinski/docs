@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-28T10:53:14+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-09-28T11:00:23+10:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>A central resource for User documentation.
 </subtitle><entry><title type="html">Installing Node.js in VM centOS</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/28/installing-nodejs-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Node.js in VM centOS" /><published>2017-09-28T09:00:00+10:00</published><updated>2017-09-28T09:00:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/28/installing-nodejs-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/28/installing-nodejs-in-vm-centos.html">&lt;blockquote&gt;
   &lt;p&gt;The purpose of this documentation is to help with managing the version of Node.js and NPM in a centos VM.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
 
-&lt;p&gt;Firstly I used this to get an understanding and what I need to remove within the VM: &lt;a href=&quot;https://hungred.com/how-to/completely-removing-nodejs-npm/&quot;&gt;Completely removing nodejs npm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Firstly I used this to get an understanding and what I need to remove within the VM: &lt;a href=&quot;https://hungred.com/how-to/completely-removing-nodejs-npm/&quot; target=&quot;blank&quot;&gt;Completely removing nodejs npm&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/lib/node_modules
 &lt;/code&gt;&lt;/pre&gt;
@@ -31,22 +31,27 @@
 
 &lt;h2 id=&quot;download-nvm&quot;&gt;Download nvm&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://davidwalsh.name/nvm&quot;&gt;managing Node.js versions with nvm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/creationix/nvm/blob/master/README.md&quot; target=&quot;blank&quot;&gt;Download nvm&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;nvm install 7.0.0&lt;/p&gt;
+&lt;p&gt;Good article on &lt;a href=&quot;https://davidwalsh.name/nvm&quot; target=&quot;blank&quot;&gt;managing Node.js versions with nvm&lt;/a&gt;. Read about &lt;a href=&quot;https://github.com/creationix/nvm/blob/master/README.md#usage&quot; target=&quot;blank&quot;&gt;nvm usage&lt;/a&gt; and if you need information about &lt;a href=&quot;https://nodejs.org/en/download/releases/&quot; target=&quot;blank&quot;&gt;version releases of Node.js&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;nvm use –delete-prefix v7.0.0&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm install 7.0.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;node -v&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm use --delete-prefix v7.0.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;npm -v&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Read about &lt;a href=&quot;https://github.com/creationix/nvm/blob/master/README.md#usage&quot;&gt;nvm usage&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/creationix/nvm/blob/master/README.md&quot;&gt;Completely removing nodejs npm&lt;/a&gt;
-&lt;a href=&quot;https://nodejs.org/en/download/releases/&quot;&gt;managing Node.js versions with nvm&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a centos VM.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;p&gt;The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You should now have Node.js running with an updated version and npm installed. Go ahead and install all other things like bower, grunt or whatever your development environment consists of.&lt;/p&gt;</content><author><name></name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a centos VM.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;p&gt;The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;checklist&quot;&gt;Checklist&lt;/h2&gt;
 

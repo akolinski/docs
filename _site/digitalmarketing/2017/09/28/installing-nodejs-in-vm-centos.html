@@ -77,7 +77,7 @@
 
 <h2 id="lets-begin">Lets begin</h2>
 
-<p>Firstly I used this to get an understanding and what I need to remove within the VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/">Completely removing nodejs npm</a>.</p>
+<p>Firstly I used this to get an understanding and what I need to remove within the VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/" target="blank">Completely removing nodejs npm</a></p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>cd /usr/local/lib/node_modules
 </code></pre>
@@ -103,23 +103,27 @@
 
 <h2 id="download-nvm">Download nvm</h2>
 
-<p><a href="https://davidwalsh.name/nvm">managing Node.js versions with nvm</a></p>
+<p><a href="https://github.com/creationix/nvm/blob/master/README.md" target="blank">Download nvm</a></p>
 
-<p>nvm install 7.0.0</p>
+<p>Good article on <a href="https://davidwalsh.name/nvm" target="blank">managing Node.js versions with nvm</a>. Read about <a href="https://github.com/creationix/nvm/blob/master/README.md#usage" target="blank">nvm usage</a> and if you need information about <a href="https://nodejs.org/en/download/releases/" target="blank">version releases of Node.js</a>.</p>
 
-<p>nvm use –delete-prefix v7.0.0</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>nvm install 7.0.0
+</code></pre>
+</div>
 
-<p>node -v</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>nvm use --delete-prefix v7.0.0
+</code></pre>
+</div>
 
-<p>npm -v</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>node -v
+</code></pre>
+</div>
 
-<p>Read about <a href="https://github.com/creationix/nvm/blob/master/README.md#usage">nvm usage</a></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>npm -v
+</code></pre>
+</div>
 
-<h2 id="reading">Reading</h2>
-
-<p><a href="https://github.com/creationix/nvm/blob/master/README.md">Completely removing nodejs npm</a>
-<a href="https://nodejs.org/en/download/releases/">managing Node.js versions with nvm</a></p>
-
+<p>You should now have Node.js running with an updated version and npm installed. Go ahead and install all other things like bower, grunt or whatever your development environment consists of.</p>
 
   </div>
 

@@ -10,7 +10,7 @@ url: installing-nodejs-in-vm-centos
 
 ## Lets begin
 
-Firstly I used this to get an understanding and what I need to remove within the VM: [Completely removing nodejs npm].
+Firstly I used this to get an understanding and what I need to remove within the VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/" target="blank">Completely removing nodejs npm</a>
 
 ```
 cd /usr/local/lib/node_modules
@@ -36,27 +36,24 @@ Then download nvm and follow the instructions to install node. The latest versio
 
 ## Download nvm
 
-[managing Node.js versions with nvm]
+<a href="https://github.com/creationix/nvm/blob/master/README.md" target="blank">Download nvm</a>
 
+Good article on <a href="https://davidwalsh.name/nvm" target="blank">managing Node.js versions with nvm</a>. Read about <a href="https://github.com/creationix/nvm/blob/master/README.md#usage" target="blank">nvm usage</a> and if you need information about <a href="https://nodejs.org/en/download/releases/" target="blank">version releases of Node.js</a>.
+
+```
 nvm install 7.0.0
+```
 
+```
 nvm use --delete-prefix v7.0.0
+```
 
+```
 node -v
+```
 
+```
 npm -v
+```
 
-Read about [nvm usage]
-
-## Reading
-
-[Completely removing nodejs npm]
-[download nvm]
-[managing Node.js versions with nvm]
-[Releases of Node.js]
-
-[Completely removing nodejs npm]: https://hungred.com/how-to/completely-removing-nodejs-npm/
-[download nvm]: https://github.com/creationix/nvm/blob/master/README.md
-[nvm usage]: https://github.com/creationix/nvm/blob/master/README.md#usage
-[managing Node.js versions with nvm]: https://davidwalsh.name/nvm
-[Releases of Node.js]: https://nodejs.org/en/download/releases/
+You should now have Node.js running with an updated version and npm installed. Go ahead and install all other things like bower, grunt or whatever your development environment consists of.
