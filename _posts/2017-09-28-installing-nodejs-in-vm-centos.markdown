@@ -2,7 +2,7 @@
 layout: post
 title:  "Installing Node.js in CentOS"
 date:   2017-09-28 09:00:00 +1000
-categories: digitalmarketing
+categories: nodejs
 url: installing-nodejs-in-centos
 ---
 
