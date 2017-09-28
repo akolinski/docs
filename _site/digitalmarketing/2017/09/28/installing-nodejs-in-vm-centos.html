@@ -58,52 +58,73 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Installing Node.js in VM centOS</h1>
+    <p class="post-meta">
+      <time datetime="2017-09-28T09:00:00+10:00" itemprop="datePublished">
+        
+        Sep 28, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <blockquote>
+  <p>The purpose of this documentation is to help with managing the version of Node.js and NPM in a centos VM.</p>
+</blockquote>
+
+<h2 id="lets-begin">Lets begin</h2>
+
+<p>Firstly I used this to get an understanding and what I need to remove within the VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/">Completely removing nodejs npm</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd /usr/local/lib/node_modules
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo rm -rf npm
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd /usr/local/lib/node_modules
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo rm -rf npm
+</code></pre>
+</div>
+
+<p>Check your Home directory for any “local” or “lib” or “include” folders, and delete any “node” or “node_modules” from there.</p>
+
+<p>Go to /usr/local/bin and delete any node executable.</p>
+
+<p>Then download nvm and follow the instructions to install node. The latest versions of node come with npm, I believe, but you can also reinstall that as well.</p>
+
+<h2 id="download-nvm">Download nvm</h2>
+
+<p><a href="https://davidwalsh.name/nvm">managing Node.js versions with nvm</a></p>
+
+<p>nvm install 7.0.0</p>
+
+<p>nvm use –delete-prefix v7.0.0</p>
+
+<p>node -v</p>
+
+<p>npm -v</p>
+
+<p>Read about <a href="https://github.com/creationix/nvm/blob/master/README.md#usage">nvm usage</a></p>
+
+<h2 id="reading">Reading</h2>
+
+<p><a href="https://github.com/creationix/nvm/blob/master/README.md">Completely removing nodejs npm</a>
+<a href="https://nodejs.org/en/download/releases/">managing Node.js versions with nvm</a></p>
+
+
+  </div>
 
   
-
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    
-      <li>
-        
-        <span class="post-meta">Sep 28, 2017</span>
-        <h2>
-          <a class="post-link" href="/docs/digitalmarketing/2017/09/28/installing-nodejs-in-vm-centos.html">Installing Node.js in VM centOS</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Sep 21, 2017</span>
-        <h2>
-          <a class="post-link" href="/docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">Image optimization checklist</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Sep 21, 2017</span>
-        <h2>
-          <a class="post-link" href="/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">Google page speed checks</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Sep 8, 2017</span>
-        <h2>
-          <a class="post-link" href="/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">EE2 to EE3 upgrade</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/docs/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
