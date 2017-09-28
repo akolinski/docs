@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Installing Node.js in VM centOS"
+title:  "Installing Node.js in CentOS"
 date:   2017-09-28 09:00:00 +1000
 categories: digitalmarketing
-url: installing-nodejs-in-vm-centos
+url: installing-nodejs-in-centos
 ---
 
-> The purpose of this documentation is to help with managing the version of Node.js and NPM in a centos VM.
+> The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.
 
 ## Lets begin
 
-Firstly I used this to get an understanding and what I need to remove within the VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/" target="blank">Completely removing nodejs npm</a>
+Firstly I read this to get an understanding and what I need to remove within the CentOS VM: <a href="https://hungred.com/how-to/completely-removing-nodejs-npm/" target="blank">Completely removing nodejs npm</a>
 
 ```
 cd /usr/local/lib/node_modules
