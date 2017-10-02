@@ -57,3 +57,47 @@ npm -v
 ```
 
 You should now have Node.js running with an updated version and npm installed. Go ahead and install all other things like bower, grunt or whatever your development environment consists of.
+
+## More node more problems
+
+Version of installed npm packages:
+
+```
+npm list nameofpackage
+```
+
+Had a few problems with the grunt-contrib-imagemin version. Had to make sure that grunt-contrib-imagemin had other plugins installed. Then we had another issue with the globbing pattern not understanding something. https://github.com/gruntjs/grunt-contrib-imagemin/issues/208 jpg,png,jpeg,gif,ico,svg. Installing different version of grunt-contrib-imagemin helps to fix the problem. https://github.com/gruntjs/grunt-contrib-imagemin/issues/372
+
+## Conclusion
+
+We found that installing the latest or later versions of node in CentOS 5.9 isn't supported. If we install a newer version of node js and install all the latest node modules they turn out not to be supported by the library binaries provided in that version of CentOS.
+
+> Running Node.js version 7.0.0 with npm version 3.10.8
+
+Package.json
+
+```
+{
+  "name": "Anonymous",
+  "version": "2.0.0",
+  "description": "Anonymous",
+  "author": "Anonymous",
+  "devDependencies": {
+    "grunt": "1.0.0",
+    "grunt-contrib-imagemin": "1.0.0",
+    "grunt-contrib-sass": "1.0.0",
+    "grunt-contrib-uglify": "3.1.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-newer": "1.3.0",
+    "load-grunt-tasks": "3.5.2",
+    "lodash": "4.17.4",
+    "time-grunt": "1.4.0"
+  },
+  "dependencies": {
+    "imagemin": "5.3.1",
+    "imagemin-jpegtran": "5.0.2",
+    "imagemin-mozjpeg": "5.1.0",
+    "imagemin-pngquant": "5.0.1"
+  }
+}
+```
