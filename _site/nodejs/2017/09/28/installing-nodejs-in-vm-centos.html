@@ -127,17 +127,21 @@
 
 <h2 id="more-node-more-problems">More node more problems</h2>
 
-<p>Version of installed npm packages:</p>
+<p>We found that we had to play around with the version of certain npm packages. The command below helped with identifying the npm package installed.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>npm list nameofpackage
 </code></pre>
 </div>
 
-<p>Had a few problems with the grunt-contrib-imagemin version. Had to make sure that grunt-contrib-imagemin had other plugins installed. Then we had another issue with the globbing pattern not understanding something. https://github.com/gruntjs/grunt-contrib-imagemin/issues/208 jpg,png,jpeg,gif,ico,svg. Installing different version of grunt-contrib-imagemin helps to fix the problem. https://github.com/gruntjs/grunt-contrib-imagemin/issues/372</p>
-
 <h2 id="conclusion">Conclusion</h2>
 
-<p>We found that installing the latest or later versions of node in CentOS 5.9 isn’t supported. If we install a newer version of node js and install all the latest node modules they turn out not to be supported by the library binaries provided in that version of CentOS.</p>
+<p>We can update all the npm packages below except for grunt-contrib-imagemin. The compression libraries it was using are not supported in CentOS version 5. These libraries would have to be updated.</p>
+
+<p>An interim solution of using grunt-image instead of grunt-contrib-imagemin was implemented. We came across one problem with grunt-image which was to do with <a href="https://github.com/gruntjs/grunt-contrib-copy/issues/21">open file limits</a>. Setting the open file limit of our VM’s higher helped the task run without any problems. However it was only an issue due to trying to compress 933 images. If we abstract out tasks to specific tasks it’ll run faster.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>ulimit -n 10480
+</code></pre>
+</div>
 
 <blockquote>
   <p>Running Node.js version 7.0.0 with npm version 3.10.8</p>
@@ -146,27 +150,21 @@
 <p>Package.json</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"devDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"grunt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"grunt-contrib-imagemin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Anonymous"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"devDependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"grunt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.1"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"grunt-contrib-sass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"grunt-contrib-uglify"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3.1.0"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"grunt-contrib-watch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"grunt-image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3.0.0"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"grunt-newer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.3.0"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"load-grunt-tasks"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3.5.2"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"lodash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.17.4"</span><span class="p">,</span><span class="w">
     </span><span class="nt">"time-grunt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.4.0"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nt">"dependencies"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"imagemin"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5.3.1"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"imagemin-jpegtran"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5.0.2"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"imagemin-mozjpeg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5.1.0"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"imagemin-pngquant"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5.0.1"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 </div>

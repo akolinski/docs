@@ -60,17 +60,21 @@ You should now have Node.js running with an updated version and npm installed. G
 
 ## More node more problems
 
-Version of installed npm packages:
+We found that we had to play around with the version of certain npm packages. The command below helped with identifying the npm package installed.
 
 ```
 npm list nameofpackage
 ```
 
-Had a few problems with the grunt-contrib-imagemin version. Had to make sure that grunt-contrib-imagemin had other plugins installed. Then we had another issue with the globbing pattern not understanding something. https://github.com/gruntjs/grunt-contrib-imagemin/issues/208 jpg,png,jpeg,gif,ico,svg. Installing different version of grunt-contrib-imagemin helps to fix the problem. https://github.com/gruntjs/grunt-contrib-imagemin/issues/372
-
 ## Conclusion
 
-We found that installing the latest or later versions of node in CentOS 5.9 isn't supported. If we install a newer version of node js and install all the latest node modules they turn out not to be supported by the library binaries provided in that version of CentOS.
+We can update all the npm packages below except for grunt-contrib-imagemin. The compression libraries it was using are not supported in CentOS version 5. These libraries would have to be updated.
+
+An interim solution of using grunt-image instead of grunt-contrib-imagemin was implemented. We came across one problem with grunt-image which was to do with <a href="https://github.com/gruntjs/grunt-contrib-copy/issues/21">open file limits</a>. Setting the open file limit of our VM's higher helped the task run without any problems. However it was only an issue due to trying to compress 933 images. If we abstract out tasks to specific tasks it'll run faster. 
+
+```
+ulimit -n 10480
+```
 
 > Running Node.js version 7.0.0 with npm version 3.10.8
 
@@ -78,26 +82,20 @@ Package.json
 
 ```
 {
-  "name": "Anonymous",
-  "version": "2.0.0",
-  "description": "Anonymous",
-  "author": "Anonymous",
-  "devDependencies": {
-    "grunt": "1.0.0",
-    "grunt-contrib-imagemin": "1.0.0",
+    "name": "Anonymous",
+    "version": "2.0.0",
+    "description": "Anonymous",
+    "author": "Anonymous",
+    "devDependencies": {
+    "grunt": "1.0.1",
     "grunt-contrib-sass": "1.0.0",
     "grunt-contrib-uglify": "3.1.0",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-image": "3.0.0",
     "grunt-newer": "1.3.0",
     "load-grunt-tasks": "3.5.2",
     "lodash": "4.17.4",
     "time-grunt": "1.4.0"
-  },
-  "dependencies": {
-    "imagemin": "5.3.1",
-    "imagemin-jpegtran": "5.0.2",
-    "imagemin-mozjpeg": "5.1.0",
-    "imagemin-pngquant": "5.0.1"
-  }
+    }
 }
 ```
