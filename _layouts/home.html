@@ -1,25 +1,22 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  {{ content }}
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h2>
-          <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-9">
+      {{ content }}
+      <h1 class="page-heading mb-5">Posts</h1>
+      <ul class="post-list list-unstyled">
+        {% for post in site.posts %}
+          <li class="mb-5">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <div class="mb-2 post-meta">{{ post.date | date: date_format }}</div>
+            <h2>
+              <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
