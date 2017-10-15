@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-10-13T16:51:00+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-10-16T09:58:53+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote&gt;
   &lt;p&gt;The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -256,28 +256,17 @@ Automate, automate, automate: invest into automated tools and infrastructure tha
 
 &lt;h4 id=&quot;image-test-scenario-1-jpg-square-image&quot;&gt;Image test scenario 1 (JPG) (Square image)&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
     &lt;tr&gt;
-      &lt;td&gt;Original file size: 311 KB&lt;/td&gt;
+        &lt;th&gt;File size&lt;/th&gt;
+        &lt;th&gt;Image dimensions&lt;/th&gt;
+        &lt;th&gt;Google Page Speed&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Original image dimensions: 1440px width 1440px height&lt;/td&gt;
+        &lt;th&gt;311 KB&lt;/th&gt;
+        &lt;th&gt;1440px width 1440px height&lt;/th&gt;
+        &lt;th&gt;50/100&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Page speed score (Desktop): 50/100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;p&gt;Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.&lt;/p&gt;
@@ -288,54 +277,32 @@ Automate, automate, automate: invest into automated tools and infrastructure tha
 
 &lt;p&gt;Then use &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; to apply lossy and lossless compression on the file.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
     &lt;tr&gt;
-      &lt;td&gt;New file size: 41 KB&lt;/td&gt;
+        &lt;th&gt;New file size&lt;/th&gt;
+        &lt;th&gt;New image dimensions&lt;/th&gt;
+        &lt;th&gt;Google Page Speed&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;New image dimensions: 490px width 490px height&lt;/td&gt;
+        &lt;th&gt;41 KB&lt;/th&gt;
+        &lt;th&gt;490px width 490px height&lt;/th&gt;
+        &lt;th&gt;51/100&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Page speed score (Desktop): 51/100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4 id=&quot;image-test-scenario-2-jpg-long-image&quot;&gt;Image test scenario 2 (JPG) (Long image)&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
     &lt;tr&gt;
-      &lt;td&gt;Original file size: 356 KB&lt;/td&gt;
+        &lt;th&gt;File size&lt;/th&gt;
+        &lt;th&gt;Image dimensions&lt;/th&gt;
+        &lt;th&gt;Google Page Speed&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Original image dimensions: 1440px width 2016px height&lt;/td&gt;
+        &lt;th&gt;356 KB&lt;/th&gt;
+        &lt;th&gt;1440px width 2016px height&lt;/th&gt;
+        &lt;th&gt;51/100&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Page speed score (Desktop): 51/100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;p&gt;Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height&lt;/p&gt;
@@ -347,28 +314,17 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;p&gt;Then use &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; to apply lossy and lossless compression on the file.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
+&lt;table class=&quot;table table-bordered&quot;&gt;
     &lt;tr&gt;
-      &lt;td&gt;New file size: 102 KB&lt;/td&gt;
+        &lt;th&gt;New file size&lt;/th&gt;
+        &lt;th&gt;New image dimensions&lt;/th&gt;
+        &lt;th&gt;Google Page Speed&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;New image dimensions: 490px width 490px height&lt;/td&gt;
+        &lt;th&gt;102 KB&lt;/th&gt;
+        &lt;th&gt;490px width 490px height&lt;/th&gt;
+        &lt;th&gt;53/100&lt;/th&gt;
     &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Page speed score (Desktop): 53/100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
 &lt;/table&gt;
 
 &lt;h4 id=&quot;testing-image-in-pagespeed&quot;&gt;Testing image in PageSpeed&lt;/h4&gt;
@@ -441,16 +397,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;h2 id=&quot;minify-javascript&quot;&gt;Minify JavaScript&lt;/h2&gt;
 
-&lt;p&gt;Make sure any JavaScript that is being used is using the Minified version.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Combined performance gain from enabling compression and minifying javascript for one file&lt;/td&gt;
-      &lt;td&gt;79/100 to 85/100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Make sure any JavaScript that is being used is using the minified version. Combined performance gain from enabling compression and minifying javascript for one file 79/100 to 85/100.&lt;/p&gt;
 
 &lt;h2 id=&quot;eliminate-render-blocking-javascript-and-css-in-above-the-fold-content&quot;&gt;Eliminate render-blocking JavaScript and CSS in above-the-fold content&lt;/h2&gt;
 

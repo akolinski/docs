@@ -130,28 +130,17 @@
 
 <h4 id="image-test-scenario-1-jpg-square-image">Image test scenario 1 (JPG) (Square image)</h4>
 
-<table>
-  <tbody>
+<table class="table table-bordered">
     <tr>
-      <td>Original file size: 311 KB</td>
+        <th>File size</th>
+        <th>Image dimensions</th>
+        <th>Google Page Speed</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
-      <td>Original image dimensions: 1440px width 1440px height</td>
+        <th>311 KB</th>
+        <th>1440px width 1440px height</th>
+        <th>50/100</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Page speed score (Desktop): 50/100</td>
-    </tr>
-  </tbody>
 </table>
 
 <p>Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.</p>
@@ -162,54 +151,32 @@
 
 <p>Then use <a href="https://tinyjpg.com/">tinyjpg</a> to apply lossy and lossless compression on the file.</p>
 
-<table>
-  <tbody>
+<table class="table table-bordered">
     <tr>
-      <td>New file size: 41 KB</td>
+        <th>New file size</th>
+        <th>New image dimensions</th>
+        <th>Google Page Speed</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
-      <td>New image dimensions: 490px width 490px height</td>
+        <th>41 KB</th>
+        <th>490px width 490px height</th>
+        <th>51/100</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Page speed score (Desktop): 51/100</td>
-    </tr>
-  </tbody>
 </table>
 
 <h4 id="image-test-scenario-2-jpg-long-image">Image test scenario 2 (JPG) (Long image)</h4>
 
-<table>
-  <tbody>
+<table class="table table-bordered">
     <tr>
-      <td>Original file size: 356 KB</td>
+        <th>File size</th>
+        <th>Image dimensions</th>
+        <th>Google Page Speed</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
-      <td>Original image dimensions: 1440px width 2016px height</td>
+        <th>356 KB</th>
+        <th>1440px width 2016px height</th>
+        <th>51/100</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Page speed score (Desktop): 51/100</td>
-    </tr>
-  </tbody>
 </table>
 
 <p>Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height</p>
@@ -221,28 +188,17 @@ For example: 343 x 2 = 686 height</p>
 
 <p>Then use <a href="https://tinyjpg.com/">tinyjpg</a> to apply lossy and lossless compression on the file.</p>
 
-<table>
-  <tbody>
+<table class="table table-bordered">
     <tr>
-      <td>New file size: 102 KB</td>
+        <th>New file size</th>
+        <th>New image dimensions</th>
+        <th>Google Page Speed</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
-      <td>New image dimensions: 490px width 490px height</td>
+        <th>102 KB</th>
+        <th>490px width 490px height</th>
+        <th>53/100</th>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Page speed score (Desktop): 53/100</td>
-    </tr>
-  </tbody>
 </table>
 
 <h4 id="testing-image-in-pagespeed">Testing image in PageSpeed</h4>
@@ -315,16 +271,7 @@ For example: 343 x 2 = 686 height</p>
 
 <h2 id="minify-javascript">Minify JavaScript</h2>
 
-<p>Make sure any JavaScript that is being used is using the Minified version.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Combined performance gain from enabling compression and minifying javascript for one file</td>
-      <td>79/100 to 85/100</td>
-    </tr>
-  </tbody>
-</table>
+<p>Make sure any JavaScript that is being used is using the minified version. Combined performance gain from enabling compression and minifying javascript for one file 79/100 to 85/100.</p>
 
 <h2 id="eliminate-render-blocking-javascript-and-css-in-above-the-fold-content">Eliminate render-blocking JavaScript and CSS in above-the-fold content</h2>
 

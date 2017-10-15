@@ -64,13 +64,18 @@ As a result, one of the simplest and most effective image optimization technique
 
 #### Image test scenario 1 (JPG) (Square image)
 
-
-Original file size: 311 KB |
-
-Original image dimensions: 1440px width 1440px height |
-
-Page speed score (Desktop): 50/100 |
-
+<table class="table table-bordered">
+    <tr>
+        <th>File size</th>
+        <th>Image dimensions</th>
+        <th>Google Page Speed</th>
+    </tr>
+    <tr>
+        <th>311 KB</th>
+        <th>1440px width 1440px height</th>
+        <th>50/100</th>
+    </tr>
+</table>
 
 Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.
 
@@ -80,21 +85,33 @@ Use photoshop on the original image. Image > Image size. Enter the new width and
 
 Then use [tinyjpg] to apply lossy and lossless compression on the file.
 
-New file size: 41 KB |
-
-New image dimensions: 490px width 490px height |
-
-Page speed score (Desktop): 51/100 |
+<table class="table table-bordered">
+    <tr>
+        <th>New file size</th>
+        <th>New image dimensions</th>
+        <th>Google Page Speed</th>
+    </tr>
+    <tr>
+        <th>41 KB</th>
+        <th>490px width 490px height</th>
+        <th>51/100</th>
+    </tr>
+</table>
 
 #### Image test scenario 2 (JPG) (Long image)
 
-
-Original file size: 356 KB |
-
-Original image dimensions: 1440px width 2016px height |
-
-Page speed score (Desktop): 51/100 |
-
+<table class="table table-bordered">
+    <tr>
+        <th>File size</th>
+        <th>Image dimensions</th>
+        <th>Google Page Speed</th>
+    </tr>
+    <tr>
+        <th>356 KB</th>
+        <th>1440px width 2016px height</th>
+        <th>51/100</th>
+    </tr>
+</table>
 
 Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height
 
@@ -105,11 +122,18 @@ Use photoshop and create a new file with the dimensions 490px width and 686px he
 
 Then use [tinyjpg] to apply lossy and lossless compression on the file.
 
-New file size: 102 KB |
-
-New image dimensions: 490px width 490px height |
-
-Page speed score (Desktop): 53/100 |
+<table class="table table-bordered">
+    <tr>
+        <th>New file size</th>
+        <th>New image dimensions</th>
+        <th>Google Page Speed</th>
+    </tr>
+    <tr>
+        <th>102 KB</th>
+        <th>490px width 490px height</th>
+        <th>53/100</th>
+    </tr>
+</table>
 
 #### Testing image in PageSpeed
 
@@ -165,9 +189,7 @@ Make sure any files that are loaded externally or internally are compressed.
 
 ## Minify JavaScript
 
-Make sure any JavaScript that is being used is using the Minified version.
-
-Combined performance gain from enabling compression and minifying javascript for one file | 79/100 to 85/100
+Make sure any JavaScript that is being used is using the minified version. Combined performance gain from enabling compression and minifying javascript for one file 79/100 to 85/100.
 
 ## Eliminate render-blocking JavaScript and CSS in above-the-fold content
 
