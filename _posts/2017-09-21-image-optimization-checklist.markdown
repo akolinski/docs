@@ -6,7 +6,9 @@ categories: digitalmarketing
 url: image-optimization-checklist
 ---
 
+<blockquote class="blockquote">
 The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].
+</blockquote>
 
 ## Checklist
 

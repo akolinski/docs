@@ -6,7 +6,9 @@ categories: nodejs
 url: installing-nodejs-in-centos
 ---
 
-> The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.
+<blockquote class="blockquote">
+The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.
+</blockquote>
 
 ## Lets begin
 

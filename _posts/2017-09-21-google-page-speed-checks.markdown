@@ -6,7 +6,9 @@ categories: digitalmarketing
 url: google-page-speed-checks
 ---
 
-> The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
+<blockquote class="blockquote">
+The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
+</blockquote>
 
 [Google PageSpeed Insights]
 

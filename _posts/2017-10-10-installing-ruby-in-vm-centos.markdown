@@ -6,7 +6,9 @@ categories: ruby
 url: installing-ruby-in-centos
 ---
 
-> The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
+<blockquote class="blockquote">
+The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
+</blockquote>
 
 ## Lets begin
 

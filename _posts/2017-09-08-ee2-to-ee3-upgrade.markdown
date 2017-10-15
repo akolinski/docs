@@ -6,7 +6,9 @@ categories: expressionengine
 url: upgrading-from-expressionengine-2-to-expressionengine3
 ---
 
+<blockquote class="blockquote">
 Okay lets start upgrading EE2 to EE3.
+</blockquote>
 
 Currently we have two instances running.
 

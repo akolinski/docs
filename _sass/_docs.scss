@@ -18,6 +18,13 @@ body {
 
 }
 
+// blockquote style
+
+blockquote {
+    padding: 10px 20px;
+    border-left: 5px solid $gray-300;
+}
+
 // Header styles
 
 .site-header {
