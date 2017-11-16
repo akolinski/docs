@@ -135,7 +135,11 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 <h2 id="upgrading-from-expressionengine-2-to-expressionengine3">Upgrading from ExpressionEngine 2 to ExpressionEngine3</h2>
 
-<p>When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do:</p>
+<p>When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.</p>
+
+<blockquote>
+  <p>Backup the current EE2 database and codebase.</p>
+</blockquote>
 
 <h3 id="1-uninstall-these-modules-and-delete-folders">1. Uninstall these modules and delete folders</h3>
 
@@ -144,17 +148,43 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 <ul>
   <li>ACER Workflow</li>
   <li>NSM Live Look</li>
+  <li>Sitemap</li>
   <li>
-    <p>Sitemap</p>
+    <p>Supersearch</p>
   </li>
-  <li>Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included in accordance to this spreadsheet: https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing</li>
+  <li>Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included.</li>
+  <li>https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing</li>
 </ul>
 
 <h3 id="2-follow-steps-from-ee-docs">2. Follow steps from EE docs</h3>
 
 <p><a href="https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html">Follow the steps from 1 to point 6</a></p>
 
+<h3 id="3-set-permissions">3. Set permissions</h3>
+
+<p>chmod 777 system/user/config/config.php
+chmod 777 system/user/cache/
+chmod 777 system/user/templates/</p>
+
 <p>Boom, we should now have EE3 running.</p>
+
+<h3 id="4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter">4. After upgrade (Can we do this before the upgrade? Does it even matter?)</h3>
+
+<ol>
+  <li>Delete all calls to ep_better_workflow in exp_extensions table</li>
+  <li>Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table</li>
+  <li>Delete all calls to Absolute_total_results_ext in exp_extensions table</li>
+  <li>Delete all exp_ep.. tables</li>
+  <li>Delete all exp_super_search.. tables</li>
+  <li>Delete exp_sitemap table ? TEST</li>
+  <li>Delete exp_proform tables ?  TEST</li>
+  <li>Delete exp_nsm tables ? TEST</li>
+  <li>Delete exp_freeform tables ? TEST</li>
+  <li>Remove Ep_better_workflow rows from exp_actions table</li>
+  <li>Remove Super_search row from exp_actions table</li>
+  <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
+  <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
+</ol>
 
 
         </div>

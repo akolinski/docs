@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-10-16T10:12:35+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-11-16T14:55:29+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
@@ -499,7 +499,11 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 &lt;h2 id=&quot;upgrading-from-expressionengine-2-to-expressionengine3&quot;&gt;Upgrading from ExpressionEngine 2 to ExpressionEngine3&lt;/h2&gt;
 
-&lt;p&gt;When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do:&lt;/p&gt;
+&lt;p&gt;When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Backup the current EE2 database and codebase.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;1-uninstall-these-modules-and-delete-folders&quot;&gt;1. Uninstall these modules and delete folders&lt;/h3&gt;
 
@@ -508,14 +512,40 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 &lt;ul&gt;
   &lt;li&gt;ACER Workflow&lt;/li&gt;
   &lt;li&gt;NSM Live Look&lt;/li&gt;
+  &lt;li&gt;Sitemap&lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Sitemap&lt;/p&gt;
+    &lt;p&gt;Supersearch&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included in accordance to this spreadsheet: https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing&lt;/li&gt;
+  &lt;li&gt;Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included.&lt;/li&gt;
+  &lt;li&gt;https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2-follow-steps-from-ee-docs&quot;&gt;2. Follow steps from EE docs&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html&quot;&gt;Follow the steps from 1 to point 6&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Boom, we should now have EE3 running.&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>
+&lt;h3 id=&quot;3-set-permissions&quot;&gt;3. Set permissions&lt;/h3&gt;
+
+&lt;p&gt;chmod 777 system/user/config/config.php
+chmod 777 system/user/cache/
+chmod 777 system/user/templates/&lt;/p&gt;
+
+&lt;p&gt;Boom, we should now have EE3 running.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter&quot;&gt;4. After upgrade (Can we do this before the upgrade? Does it even matter?)&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Delete all calls to ep_better_workflow in exp_extensions table&lt;/li&gt;
+  &lt;li&gt;Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table&lt;/li&gt;
+  &lt;li&gt;Delete all calls to Absolute_total_results_ext in exp_extensions table&lt;/li&gt;
+  &lt;li&gt;Delete all exp_ep.. tables&lt;/li&gt;
+  &lt;li&gt;Delete all exp_super_search.. tables&lt;/li&gt;
+  &lt;li&gt;Delete exp_sitemap table ? TEST&lt;/li&gt;
+  &lt;li&gt;Delete exp_proform tables ?  TEST&lt;/li&gt;
+  &lt;li&gt;Delete exp_nsm tables ? TEST&lt;/li&gt;
+  &lt;li&gt;Delete exp_freeform tables ? TEST&lt;/li&gt;
+  &lt;li&gt;Remove Ep_better_workflow rows from exp_actions table&lt;/li&gt;
+  &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
+  &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
+  &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>
