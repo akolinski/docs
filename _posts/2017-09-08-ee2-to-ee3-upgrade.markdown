@@ -95,6 +95,8 @@ I think this step is only needed if we actually bring files from the EE2 instanc
 
 ### 2. Follow steps from EE docs
 
+Note * In the documentation where they recommend "putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now." Be sure to move the addons themes folder as well.
+
 [Follow the steps from 1 to point 6][ee2-upgrade]
 
 ### 3. Set permissions
@@ -120,7 +122,6 @@ Boom, we should now have EE3 running.
 8. Remove Super_search row from exp_actions table
 9. Open exp_modules and delete any references to modules that have been already uninstalled
 10. Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.
-
 
 [ee2-upgrade]: https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html
 [ee-conversion]:   https://docs.expressionengine.com/latest/development/conversion/index.html
