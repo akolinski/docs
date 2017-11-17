@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-11-17T16:35:24+11:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-11-17T16:36:41+11:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
@@ -456,10 +456,11 @@ modified:   public/system/expressionengine/third_party/ep_better_workflow/librar
 
 &lt;p&gt;from&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
-require_once ('core/Environment.php');
-&lt;/code&gt;
-to&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('core/Environment.php');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;to&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('libraries/core/Environment.php');
 &lt;/code&gt;&lt;/pre&gt;

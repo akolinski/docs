@@ -33,9 +33,10 @@ modified:   public/system/expressionengine/third_party/ep_better_workflow/librar
 
 from
 
-<code>
+```
 require_once ('core/Environment.php');
-</code>
+```
+
 to
 
 ```
