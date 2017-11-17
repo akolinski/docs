@@ -12,8 +12,11 @@ Okay lets start upgrading EE2 to EE3.
 
 Currently we have two instances running.
 
-1. EE2 instance
-2. A fresh EE3 instance
+1. in the public folder we have our old EE2 instance running
+2. in the ee3 folder we have a fresh install of ee3 for testing purposes
+3. to run the upgrade and then revert back duplicate the public folder and rename to public_before_upgrade and take a dump of the db.
+
+You are now in a safe place.
 
 ## EE2 instance
 
@@ -95,7 +98,7 @@ I think this step is only needed if we actually bring files from the EE2 instanc
 
 ### 2. Follow steps from EE docs
 
-Note * In the documentation where they recommend "putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now." Be sure to move the addons themes folder as well.
+Note * In the documentation where they recommend "putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now." Be sure to move the addons themes folders as well.
 
 [Follow the steps from 1 to point 6][ee2-upgrade]
 

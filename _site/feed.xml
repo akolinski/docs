@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-11-17T10:24:24+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-11-17T10:39:24+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
@@ -432,9 +432,12 @@ Okay lets start upgrading EE2 to EE3.
 &lt;p&gt;Currently we have two instances running.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;EE2 instance&lt;/li&gt;
-  &lt;li&gt;A fresh EE3 instance&lt;/li&gt;
+  &lt;li&gt;in the public folder we have our old EE2 instance running&lt;/li&gt;
+  &lt;li&gt;in the ee3 folder we have a fresh install of ee3 for testing purposes&lt;/li&gt;
+  &lt;li&gt;to run the upgrade and then revert back duplicate the public folder and rename to public_before_upgrade and take a dump of the db.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;You are now in a safe place.&lt;/p&gt;
 
 &lt;h2 id=&quot;ee2-instance&quot;&gt;EE2 instance&lt;/h2&gt;
 
@@ -522,7 +525,7 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 &lt;h3 id=&quot;2-follow-steps-from-ee-docs&quot;&gt;2. Follow steps from EE docs&lt;/h3&gt;
 
-&lt;p&gt;Note * In the documentation where they recommend “putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now.” Be sure to move the addons themes folder as well.&lt;/p&gt;
+&lt;p&gt;Note * In the documentation where they recommend “putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now.” Be sure to move the addons themes folders as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html&quot;&gt;Follow the steps from 1 to point 6&lt;/a&gt;&lt;/p&gt;
 
