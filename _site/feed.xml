@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2017-11-17T10:39:24+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-11-17T16:31:28+11:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
 
@@ -59,7 +59,7 @@ The purpose of this documentation is to help with managing the version Ruby in a
 
 &lt;h2 id=&quot;installing-ruby-locally-or-on-a-different-vm&quot;&gt;Installing ruby locally or on a different VM&lt;/h2&gt;
 
-&lt;p&gt;Use &lt;a href=&quot;https://rvm.io/rvm/install&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.</summary></entry><entry><title type="html">Installing Node.js in CentOS</title><link href="http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Node.js in CentOS" /><published>2017-09-28T09:00:00+10:00</published><updated>2017-09-28T09:00:00+10:00</updated><id>http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;Use &lt;a href=&quot;https://rvm.io/rvm/install&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.</summary></entry><entry><title type="html">Installing Node.js in CentOS</title><link href="https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Node.js in CentOS" /><published>2017-09-28T09:00:00+10:00</published><updated>2017-09-28T09:00:00+10:00</updated><id>https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.
 &lt;/blockquote&gt;
 
@@ -155,7 +155,7 @@ The purpose of this documentation is to help with managing the version of Node.j
     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].
 &lt;/blockquote&gt;
 
@@ -189,7 +189,7 @@ Automate, automate, automate: invest into automated tools and infrastructure tha
 
 &lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry><entry><title type="html">Google page speed checks</title><link href="http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html" rel="alternate" type="text/html" title="Google page speed checks" /><published>2017-09-21T09:00:00+10:00</published><updated>2017-09-21T09:00:00+10:00</updated><id>http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks</id><content type="html" xml:base="http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry><entry><title type="html">Google page speed checks</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks.html" rel="alternate" type="text/html" title="Google page speed checks" /><published>2017-09-21T09:00:00+10:00</published><updated>2017-09-21T09:00:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
 &lt;/blockquote&gt;
 
@@ -425,7 +425,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/webp/docs/compression&quot;&gt;compression techniques&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</summary></entry><entry><title type="html">EE2 to EE3 upgrade</title><link href="http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</summary></entry><entry><title type="html">EE2 to EE3 upgrade</title><link href="https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Okay lets start upgrading EE2 to EE3.
 &lt;/blockquote&gt;
 
@@ -471,7 +471,7 @@ modified:   public/system/expressionengine/third_party/ep_better_workflow/librar
 
 &lt;p&gt;from&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/local/www-shared/ee-acer/assets/templates/stash-cache/';
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/local/www-shared/ee-anon/assets/templates/stash-cache/';
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -510,17 +510,16 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 &lt;h3 id=&quot;1-uninstall-these-modules-and-delete-folders&quot;&gt;1. Uninstall these modules and delete folders&lt;/h3&gt;
 
-&lt;p&gt;I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM’s to this new EE2 instance. This is because currently we cannot remove ACER Workflow from the current website.&lt;/p&gt;
+&lt;p&gt;I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM’s to this new EE2 instance. This is because currently we cannot remove ANON Workflow from the current website.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;ACER Workflow&lt;/li&gt;
+  &lt;li&gt;ANON Workflow&lt;/li&gt;
   &lt;li&gt;NSM Live Look&lt;/li&gt;
   &lt;li&gt;Sitemap&lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Supersearch&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included.&lt;/li&gt;
-  &lt;li&gt;https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing&lt;/li&gt;
+  &lt;li&gt;Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;2-follow-steps-from-ee-docs&quot;&gt;2. Follow steps from EE docs&lt;/h3&gt;

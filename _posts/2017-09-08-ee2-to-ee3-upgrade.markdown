@@ -49,7 +49,7 @@ Update the stash_static_basepath && stash_file_basepath in config.php
 from
 
 ```
-/usr/local/www-shared/ee-acer/assets/templates/stash-cache/';
+/usr/local/www-shared/ee-anon/assets/templates/stash-cache/';
 ```
 
 to
@@ -57,7 +57,6 @@ to
 ```
 assets/templates/stash-cache/
 ```
-
 
 ## So we are going to rewrite this so that it's super simple.
 
@@ -86,15 +85,14 @@ When we are ready we need to copy files from EE2 old vm to this current EE2 (pub
 
 ### 1. Uninstall these modules and delete folders
 
-I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM's to this new EE2 instance. This is because currently we cannot remove ACER Workflow from the current website.
+I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM's to this new EE2 instance. This is because currently we cannot remove ANON Workflow from the current website.
 
-- ACER Workflow
+- ANON Workflow
 - NSM Live Look
 - Sitemap
 - Supersearch
 
-* Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren't included.
-- https://docs.google.com/spreadsheets/d/129oMPR6J1OaKV2dFs-1Wij20ZaUIWy1JHSyv0bRtYDI/edit?usp=sharing
+* Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren't included!
 
 ### 2. Follow steps from EE docs
 
