@@ -124,6 +124,7 @@ Boom, we should now have EE3 running.
 8. Remove Super_search row from exp_actions table
 9. Open exp_modules and delete any references to modules that have been already uninstalled
 10. Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.
+11. To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.
 
 [ee2-upgrade]: https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html
 [ee-conversion]:   https://docs.expressionengine.com/latest/development/conversion/index.html
