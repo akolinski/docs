@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "BOZO"
+date:   2018-02-22 09:00:48 +1000
+categories: gaming
+url: bozo
+---
+
+<blockquote class="blockquote">
+A policy written for the BOZO clan. It outlines the process involved with new players using the CLAN tag on games we play.
+</blockquote>
+
+## COD WW2
+
+A new player must obtain the vote of the committee members of the BOZO clan.
+
+- Grant
+- Kayleb
+- Adam
+
+In order for a player to achieve this
+
+

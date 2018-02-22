@@ -109,6 +109,7 @@ chmod 777 system/user/templates/
 
 Boom, we should now have EE3 running.
 
+<<<<<<< HEAD
 ### 4. After upgrade
 
 <ol>
@@ -127,8 +128,26 @@ Boom, we should now have EE3 running.
     <li>To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.</li>
     <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
 </ol>
+=======
+### 4. After upgrade (Can we do this before the upgrade? Does it even matter?)
 
-[ee2-upgrade]: https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html
+1. Delete all calls to ep_better_workflow in exp_extensions table
+1. Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table
+1. Delete all calls to Absolute_total_results_ext in exp_extensions table
+2. Delete all exp_ep.. tables
+3. Delete all exp_super_search.. tables
+4. Delete exp_sitemap table ? TEST
+5. Delete exp_proform tables ?  TEST
+5. Delete exp_nsm tables ? TEST
+6. Delete exp_freeform tables ? TEST
+7. Remove Ep_better_workflow rows from exp_actions table
+8. Remove Super_search row from exp_actions table
+9. Open exp_modules and delete any references to modules that have been already uninstalled
+10. Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.
+11. To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.
+>>>>>>> gh-pages
+
+[ee2-upgrade]: https://docs.expressionengine.com/v3/installation/upgrade_from_2.x.html
 [ee-conversion]:   https://docs.expressionengine.com/latest/development/conversion/index.html
 [ee3-addon-setup]: https://docs.expressionengine.com/latest/development/addon_setup_php_file.html
 [ee3-co-styles]: https://docs.expressionengine.com/latest/development/cp_styles/index.html
