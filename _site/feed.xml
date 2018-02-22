@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="https://akolinski.github.io//docs/feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//docs/" rel="alternate" type="text/html" /><updated>2017-11-17T16:36:41+11:00</updated><id>https://akolinski.github.io//docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-02-22T13:32:23+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">BOZO</title><link href="http://localhost:4000/docs/gaming/2018/02/22/bozo.html" rel="alternate" type="text/html" title="BOZO" /><published>2018-02-22T10:00:48+11:00</published><updated>2018-02-22T10:00:48+11:00</updated><id>http://localhost:4000/docs/gaming/2018/02/22/bozo</id><content type="html" xml:base="http://localhost:4000/docs/gaming/2018/02/22/bozo.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+A policy written for the BOZO clan. It outlines the process involved with new players using the CLAN tag on games we play.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;cod-ww2&quot;&gt;COD WW2&lt;/h2&gt;
+
+&lt;p&gt;A new player must obtain the vote of the committee members of the BOZO clan.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Grant&lt;/li&gt;
+  &lt;li&gt;Kayleb&lt;/li&gt;
+  &lt;li&gt;Adam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In order for a player to achieve this&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">A policy written for the BOZO clan. It outlines the process involved with new players using the CLAN tag on games we play.</summary></entry><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
 
@@ -59,7 +73,7 @@ The purpose of this documentation is to help with managing the version Ruby in a
 
 &lt;h2 id=&quot;installing-ruby-locally-or-on-a-different-vm&quot;&gt;Installing ruby locally or on a different VM&lt;/h2&gt;
 
-&lt;p&gt;Use &lt;a href=&quot;https://rvm.io/rvm/install&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.</summary></entry><entry><title type="html">Installing Node.js in CentOS</title><link href="https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Node.js in CentOS" /><published>2017-09-28T09:00:00+10:00</published><updated>2017-09-28T09:00:00+10:00</updated><id>https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos</id><content type="html" xml:base="https://akolinski.github.io//docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;Use &lt;a href=&quot;https://rvm.io/rvm/install&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.</summary></entry><entry><title type="html">Installing Node.js in CentOS</title><link href="http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Node.js in CentOS" /><published>2017-09-28T09:00:00+10:00</published><updated>2017-09-28T09:00:00+10:00</updated><id>http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/nodejs/2017/09/28/installing-nodejs-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.
 &lt;/blockquote&gt;
 
@@ -155,7 +169,7 @@ The purpose of this documentation is to help with managing the version of Node.j
     &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="http://localhost:4000/docs/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].
 &lt;/blockquote&gt;
 
@@ -189,7 +203,7 @@ Automate, automate, automate: invest into automated tools and infrastructure tha
 
 &lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry><entry><title type="html">Google page speed checks</title><link href="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks.html" rel="alternate" type="text/html" title="Google page speed checks" /><published>2017-09-21T09:00:00+10:00</published><updated>2017-09-21T09:00:00+10:00</updated><id>https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks</id><content type="html" xml:base="https://akolinski.github.io//docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry><entry><title type="html">Google page speed checks</title><link href="http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html" rel="alternate" type="text/html" title="Google page speed checks" /><published>2017-09-21T09:00:00+10:00</published><updated>2017-09-21T09:00:00+10:00</updated><id>http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks</id><content type="html" xml:base="http://localhost:4000/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
 &lt;/blockquote&gt;
 
@@ -425,7 +439,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/webp/docs/compression&quot;&gt;compression techniques&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</summary></entry><entry><title type="html">EE2 to EE3 upgrade</title><link href="https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="https://akolinski.github.io//docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</summary></entry><entry><title type="html">EE2 to EE3 upgrade</title><link href="http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="http://localhost:4000/docs/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Okay lets start upgrading EE2 to EE3.
 &lt;/blockquote&gt;
 
@@ -527,7 +541,7 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 &lt;p&gt;Note * In the documentation where they recommend “putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now.” Be sure to move the addons themes folders as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html&quot;&gt;Follow the steps from 1 to point 6&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/v3/installation/upgrade_from_2.x.html&quot;&gt;Follow the steps from 1 to point 6&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;3-set-permissions&quot;&gt;3. Set permissions&lt;/h3&gt;
 
@@ -553,4 +567,5 @@ chmod 777 system/user/templates/&lt;/p&gt;
   &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
   &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
   &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
+  &lt;li&gt;To be removed ‘parent_is_bwf_draft’ from &lt;code class=&quot;highlighter-rouge&quot;&gt;exp_relationships&lt;/code&gt; for publisher to be able to install.&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>

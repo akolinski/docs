@@ -163,7 +163,7 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 <p>Note * In the documentation where they recommend “putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now.” Be sure to move the addons themes folders as well.</p>
 
-<p><a href="https://docs.expressionengine.com/latest/installation/upgrade_from_2.x.html">Follow the steps from 1 to point 6</a></p>
+<p><a href="https://docs.expressionengine.com/v3/installation/upgrade_from_2.x.html">Follow the steps from 1 to point 6</a></p>
 
 <h3 id="3-set-permissions">3. Set permissions</h3>
 
@@ -189,6 +189,7 @@ chmod 777 system/user/templates/</p>
   <li>Remove Super_search row from exp_actions table</li>
   <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
   <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
+  <li>To be removed ‘parent_is_bwf_draft’ from <code class="highlighter-rouge">exp_relationships</code> for publisher to be able to install.</li>
 </ol>
 
 
