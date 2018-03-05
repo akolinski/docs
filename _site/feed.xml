@@ -1,19 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-02-22T13:32:23+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">BOZO</title><link href="http://localhost:4000/docs/gaming/2018/02/22/bozo.html" rel="alternate" type="text/html" title="BOZO" /><published>2018-02-22T10:00:48+11:00</published><updated>2018-02-22T10:00:48+11:00</updated><id>http://localhost:4000/docs/gaming/2018/02/22/bozo</id><content type="html" xml:base="http://localhost:4000/docs/gaming/2018/02/22/bozo.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
-A policy written for the BOZO clan. It outlines the process involved with new players using the CLAN tag on games we play.
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;cod-ww2&quot;&gt;COD WW2&lt;/h2&gt;
-
-&lt;p&gt;A new player must obtain the vote of the committee members of the BOZO clan.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Grant&lt;/li&gt;
-  &lt;li&gt;Kayleb&lt;/li&gt;
-  &lt;li&gt;Adam&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In order for a player to achieve this&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">A policy written for the BOZO clan. It outlines the process involved with new players using the CLAN tag on games we play.</summary></entry><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-03-05T15:03:21+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
 
@@ -551,6 +537,26 @@ chmod 777 system/user/templates/&lt;/p&gt;
 
 &lt;p&gt;Boom, we should now have EE3 running.&lt;/p&gt;
 
+&lt;p&gt;«««&amp;lt; HEAD&lt;/p&gt;
+&lt;h3 id=&quot;4-after-upgrade&quot;&gt;4. After upgrade&lt;/h3&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Delete all calls to ep_better_workflow in exp_extensions table&lt;/li&gt;
+    &lt;li&gt;Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table&lt;/li&gt;
+    &lt;li&gt;Delete all calls to Absolute_total_results_ext in exp_extensions table&lt;/li&gt;
+    &lt;li&gt;Delete all exp_ep.. tables&lt;/li&gt;
+    &lt;li&gt;Delete all exp_super_search.. tables&lt;/li&gt;
+    &lt;li&gt;Delete exp_sitemap table ? TEST&lt;/li&gt;
+    &lt;li&gt;Delete exp_proform tables ?  TEST&lt;/li&gt;
+    &lt;li&gt;Delete exp_nsm tables ? TEST&lt;/li&gt;
+    &lt;li&gt;Delete exp_freeform tables ? TEST&lt;/li&gt;
+    &lt;li&gt;Remove Ep_better_workflow rows from exp_actions table&lt;/li&gt;
+    &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
+    &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
+    &lt;li&gt;To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.&lt;/li&gt;
+    &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;=======&lt;/p&gt;
 &lt;h3 id=&quot;4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter&quot;&gt;4. After upgrade (Can we do this before the upgrade? Does it even matter?)&lt;/h3&gt;
 
 &lt;ol&gt;
@@ -567,5 +573,21 @@ chmod 777 system/user/templates/&lt;/p&gt;
   &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
   &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
   &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
-  &lt;li&gt;To be removed ‘parent_is_bwf_draft’ from &lt;code class=&quot;highlighter-rouge&quot;&gt;exp_relationships&lt;/code&gt; for publisher to be able to install.&lt;/li&gt;
+  &lt;li&gt;To be removed ‘parent_is_bwf_draft’ from &lt;code class=&quot;highlighter-rouge&quot;&gt;exp_relationships&lt;/code&gt; for publisher to be able to install.
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;blockquote&gt;
+            &lt;blockquote&gt;
+              &lt;blockquote&gt;
+                &lt;blockquote&gt;
+                  &lt;p&gt;gh-pages&lt;/p&gt;
+                &lt;/blockquote&gt;
+              &lt;/blockquote&gt;
+            &lt;/blockquote&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>

@@ -173,6 +173,26 @@ chmod 777 system/user/templates/</p>
 
 <p>Boom, we should now have EE3 running.</p>
 
+<p>«««&lt; HEAD</p>
+<h3 id="4-after-upgrade">4. After upgrade</h3>
+
+<ol>
+    <li>Delete all calls to ep_better_workflow in exp_extensions table</li>
+    <li>Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table</li>
+    <li>Delete all calls to Absolute_total_results_ext in exp_extensions table</li>
+    <li>Delete all exp_ep.. tables</li>
+    <li>Delete all exp_super_search.. tables</li>
+    <li>Delete exp_sitemap table ? TEST</li>
+    <li>Delete exp_proform tables ?  TEST</li>
+    <li>Delete exp_nsm tables ? TEST</li>
+    <li>Delete exp_freeform tables ? TEST</li>
+    <li>Remove Ep_better_workflow rows from exp_actions table</li>
+    <li>Remove Super_search row from exp_actions table</li>
+    <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
+    <li>To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.</li>
+    <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
+</ol>
+<p>=======</p>
 <h3 id="4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter">4. After upgrade (Can we do this before the upgrade? Does it even matter?)</h3>
 
 <ol>
@@ -189,7 +209,23 @@ chmod 777 system/user/templates/</p>
   <li>Remove Super_search row from exp_actions table</li>
   <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
   <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
-  <li>To be removed ‘parent_is_bwf_draft’ from <code class="highlighter-rouge">exp_relationships</code> for publisher to be able to install.</li>
+  <li>To be removed ‘parent_is_bwf_draft’ from <code class="highlighter-rouge">exp_relationships</code> for publisher to be able to install.
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>gh-pages</p>
+                </blockquote>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
 </ol>
 
 
