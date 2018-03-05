@@ -82,7 +82,7 @@ You need to copy out this files if you want to be able to destroy these newly cr
 
 When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.
 
-> Backup the current EE2 database and codebase.
+<blockquote>Backup the current EE2 database and codebase.</blockquote>
 
 ### 1. Uninstall these modules and delete folders
 
@@ -109,7 +109,6 @@ chmod 777 system/user/templates/
 
 Boom, we should now have EE3 running.
 
-<<<<<<< HEAD
 ### 4. After upgrade
 
 <ol>
@@ -128,24 +127,6 @@ Boom, we should now have EE3 running.
     <li>To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.</li>
     <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
 </ol>
-=======
-### 4. After upgrade (Can we do this before the upgrade? Does it even matter?)
-
-1. Delete all calls to ep_better_workflow in exp_extensions table
-1. Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table
-1. Delete all calls to Absolute_total_results_ext in exp_extensions table
-2. Delete all exp_ep.. tables
-3. Delete all exp_super_search.. tables
-4. Delete exp_sitemap table ? TEST
-5. Delete exp_proform tables ?  TEST
-5. Delete exp_nsm tables ? TEST
-6. Delete exp_freeform tables ? TEST
-7. Remove Ep_better_workflow rows from exp_actions table
-8. Remove Super_search row from exp_actions table
-9. Open exp_modules and delete any references to modules that have been already uninstalled
-10. Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.
-11. To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.
->>>>>>> gh-pages
 
 [ee2-upgrade]: https://docs.expressionengine.com/v3/installation/upgrade_from_2.x.html
 [ee-conversion]:   https://docs.expressionengine.com/latest/development/conversion/index.html

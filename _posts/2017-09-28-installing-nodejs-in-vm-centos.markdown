@@ -78,7 +78,7 @@ An interim solution of using grunt-image instead of grunt-contrib-imagemin was i
 ulimit -n 10480
 ```
 
-> Running Node.js version 7.0.0 with npm version 3.10.8
+<blockquote class="blockquote">Running Node.js version 7.0.0 with npm version 3.10.8</blockquote>
 
 Package.json
 

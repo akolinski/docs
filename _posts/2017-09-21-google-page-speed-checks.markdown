@@ -147,7 +147,7 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg m
 
 <!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg" alt="test"> -->
 
-> Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).
+<blockquote class="blockquote">Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).</blockquote>
 
 - Image test 500w x 500h - no compression = 199kb
 
@@ -155,7 +155,7 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg mad
 
 <!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-500x500.jpg" alt="test"> -->
 
-> Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).
+<blockquote class="blockquote">Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).</blockquote>
 
 - Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb
 
@@ -163,7 +163,7 @@ Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compr
 
 <!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg" alt="test"> -->
 
-> Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).
+<blockquote class="blockquote">Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).</blockquote>
 
 - Image test 1000w x 1000h - Compressed to file size 55kb
 
@@ -171,7 +171,7 @@ Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uplo
 
 <!-- <img width="500" height="500" src="https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg" alt="test"> -->
 
-> No image recommendations
+<blockquote class="blockquote">No image recommendations</blockquote>
 
 #### What we found
 

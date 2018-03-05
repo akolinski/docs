@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-03-05T15:03:57+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-03-05T15:17:08+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
@@ -131,9 +131,7 @@ The purpose of this documentation is to help with managing the version of Node.j
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Running Node.js version 7.0.0 with npm version 3.10.8&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;Running Node.js version 7.0.0 with npm version 3.10.8&lt;/blockquote&gt;
 
 &lt;p&gt;Package.json&lt;/p&gt;
 
@@ -341,9 +339,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).&lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Image test 500w x 500h - no compression = 199kb&lt;/li&gt;
@@ -353,9 +349,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-500x500.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).&lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb&lt;/li&gt;
@@ -365,9 +359,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).&lt;/blockquote&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Image test 1000w x 1000h - Compressed to file size 55kb&lt;/li&gt;
@@ -377,9 +369,7 @@ For example: 343 x 2 = 686 height&lt;/p&gt;
 
 &lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;No image recommendations&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote class=&quot;blockquote&quot;&gt;No image recommendations&lt;/blockquote&gt;
 
 &lt;h4 id=&quot;what-we-found&quot;&gt;What we found&lt;/h4&gt;
 
@@ -505,9 +495,7 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 &lt;p&gt;When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Backup the current EE2 database and codebase.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;blockquote&gt;Backup the current EE2 database and codebase.&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;1-uninstall-these-modules-and-delete-folders&quot;&gt;1. Uninstall these modules and delete folders&lt;/h3&gt;
 
@@ -537,7 +525,6 @@ chmod 777 system/user/templates/&lt;/p&gt;
 
 &lt;p&gt;Boom, we should now have EE3 running.&lt;/p&gt;
 
-&lt;p&gt;«««&amp;lt; HEAD&lt;/p&gt;
 &lt;h3 id=&quot;4-after-upgrade&quot;&gt;4. After upgrade&lt;/h3&gt;
 
 &lt;ol&gt;
@@ -555,39 +542,4 @@ chmod 777 system/user/templates/&lt;/p&gt;
     &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
     &lt;li&gt;To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.&lt;/li&gt;
     &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;=======&lt;/p&gt;
-&lt;h3 id=&quot;4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter&quot;&gt;4. After upgrade (Can we do this before the upgrade? Does it even matter?)&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Delete all calls to ep_better_workflow in exp_extensions table&lt;/li&gt;
-  &lt;li&gt;Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table&lt;/li&gt;
-  &lt;li&gt;Delete all calls to Absolute_total_results_ext in exp_extensions table&lt;/li&gt;
-  &lt;li&gt;Delete all exp_ep.. tables&lt;/li&gt;
-  &lt;li&gt;Delete all exp_super_search.. tables&lt;/li&gt;
-  &lt;li&gt;Delete exp_sitemap table ? TEST&lt;/li&gt;
-  &lt;li&gt;Delete exp_proform tables ?  TEST&lt;/li&gt;
-  &lt;li&gt;Delete exp_nsm tables ? TEST&lt;/li&gt;
-  &lt;li&gt;Delete exp_freeform tables ? TEST&lt;/li&gt;
-  &lt;li&gt;Remove Ep_better_workflow rows from exp_actions table&lt;/li&gt;
-  &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
-  &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
-  &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
-  &lt;li&gt;To be removed ‘parent_is_bwf_draft’ from &lt;code class=&quot;highlighter-rouge&quot;&gt;exp_relationships&lt;/code&gt; for publisher to be able to install.
-    &lt;blockquote&gt;
-      &lt;blockquote&gt;
-        &lt;blockquote&gt;
-          &lt;blockquote&gt;
-            &lt;blockquote&gt;
-              &lt;blockquote&gt;
-                &lt;blockquote&gt;
-                  &lt;p&gt;gh-pages&lt;/p&gt;
-                &lt;/blockquote&gt;
-              &lt;/blockquote&gt;
-            &lt;/blockquote&gt;
-          &lt;/blockquote&gt;
-        &lt;/blockquote&gt;
-      &lt;/blockquote&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>

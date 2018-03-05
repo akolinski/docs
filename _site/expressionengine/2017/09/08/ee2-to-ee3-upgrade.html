@@ -141,9 +141,7 @@ drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
 
 <p>When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.</p>
 
-<blockquote>
-  <p>Backup the current EE2 database and codebase.</p>
-</blockquote>
+<blockquote>Backup the current EE2 database and codebase.</blockquote>
 
 <h3 id="1-uninstall-these-modules-and-delete-folders">1. Uninstall these modules and delete folders</h3>
 
@@ -173,7 +171,6 @@ chmod 777 system/user/templates/</p>
 
 <p>Boom, we should now have EE3 running.</p>
 
-<p>«««&lt; HEAD</p>
 <h3 id="4-after-upgrade">4. After upgrade</h3>
 
 <ol>
@@ -191,41 +188,6 @@ chmod 777 system/user/templates/</p>
     <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
     <li>To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.</li>
     <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
-</ol>
-<p>=======</p>
-<h3 id="4-after-upgrade-can-we-do-this-before-the-upgrade-does-it-even-matter">4. After upgrade (Can we do this before the upgrade? Does it even matter?)</h3>
-
-<ol>
-  <li>Delete all calls to ep_better_workflow in exp_extensions table</li>
-  <li>Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table</li>
-  <li>Delete all calls to Absolute_total_results_ext in exp_extensions table</li>
-  <li>Delete all exp_ep.. tables</li>
-  <li>Delete all exp_super_search.. tables</li>
-  <li>Delete exp_sitemap table ? TEST</li>
-  <li>Delete exp_proform tables ?  TEST</li>
-  <li>Delete exp_nsm tables ? TEST</li>
-  <li>Delete exp_freeform tables ? TEST</li>
-  <li>Remove Ep_better_workflow rows from exp_actions table</li>
-  <li>Remove Super_search row from exp_actions table</li>
-  <li>Open exp_modules and delete any references to modules that have been already uninstalled</li>
-  <li>Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.</li>
-  <li>To be removed ‘parent_is_bwf_draft’ from <code class="highlighter-rouge">exp_relationships</code> for publisher to be able to install.
-    <blockquote>
-      <blockquote>
-        <blockquote>
-          <blockquote>
-            <blockquote>
-              <blockquote>
-                <blockquote>
-                  <p>gh-pages</p>
-                </blockquote>
-              </blockquote>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </li>
 </ol>
 
 
