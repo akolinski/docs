@@ -1,5 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-03-05T15:17:08+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-03-06T16:36:30+11:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to git rebase a local branch</title><link href="http://localhost:4000/docs/git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>http://localhost:4000/docs/git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+Need to rebase your local branch before creating a pull request?
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+
+&lt;p&gt;Within your current local branch add all of your current changes, commit and push them to origin.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Checkout out to master and and pull origin&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Checkout back to your local branch and rebase from master. Then force push the changes to origin.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+&lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Be careful!&lt;/h4&gt;
+&lt;p class=&quot;mb-0&quot;&gt;If someone else is working on the same branch as you 'force pushing' will lose their work. There is a safer way. Merging master into your branch will allow you to push without a force. However you will now have the problem of a messy git commit history. You can rebase interactively and squash your commits into a single commit to make it nice and tidy.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p class=&quot;mb-0&quot;&gt;
+Here is the stack overflow link to the question I read through &lt;a class=&quot;alert-link&quot; href=&quot;https://stackoverflow.com/questions/7929369/how-to-rebase-local-branch-with-remote-master&quot; target=&quot;_blank&quot;&gt;How to rebase local branch with remote master&lt;/a&gt;. I also read &lt;a class=&quot;alert-link&quot; href=&quot;https://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit&quot; target=&quot;_blank&quot;&gt;squash several Git commits into a single commit&lt;/a&gt; to learn how to clean up my local branches commit history before creating a pull request.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Need to rebase your local branch before creating a pull request?</summary></entry><entry><title type="html">Installing Ruby in CentOS</title><link href="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html" rel="alternate" type="text/html" title="Installing Ruby in CentOS" /><published>2017-10-10T10:00:00+11:00</published><updated>2017-10-10T10:00:00+11:00</updated><id>http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos</id><content type="html" xml:base="http://localhost:4000/docs/ruby/2017/10/10/installing-ruby-in-vm-centos.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this documentation is to help with managing the version Ruby in a CentOS VM.
 &lt;/blockquote&gt;
 
