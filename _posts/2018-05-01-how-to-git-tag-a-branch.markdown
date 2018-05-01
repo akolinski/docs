@@ -21,14 +21,20 @@ git fetch --tags
 git describe --tags
 ```
 
+That will return to you the previous tag. Which you can now iterate and go up one version number. Of course it'll only return a tag if it previously had one.
+
+```
+git tag -a tag-1.0.0 -m 'tag-1.0.0'
+```
+
 Now you have to push the tags.
 
 ```
-git push -f origin master
+git push --tags
 ```
 
 Finally push everything up.
 
 ```
-git push origin master
+git push origin branch_name
 ```

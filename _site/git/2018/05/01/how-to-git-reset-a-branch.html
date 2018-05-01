@@ -63,24 +63,24 @@
         </header>
         <div class="post-content" itemprop="articleBody">
           <blockquote class="blockquote">
-Need to reset your branch? Lets go back in time.
+Need to revert to a previous commit? Lets go back in time.
 </blockquote>
 
 <h2 id="lets-begin">Lets begin</h2>
 
-<p>Within the branch you want to revert back to a previous commit. In Github or whatever version control app you are using find out the hash of the commit you want to revert to. Once retrieved follow these commands.</p>
+<p>Within the branch you want to revert to a previous commit. In Github or whatever version control app you are using find out the hash of the commit you want to revert to. Once retrieved follow these commands.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard ea9473eacd2
 </code></pre>
 </div>
 
-<p>Now you have to push the tags.</p>
+<p>Leave a nice commit message informing that you have reverted.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m "reverting branch back to ea9473eacd2"
+<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m "Reverting branch to ea9473eacd2"
 </code></pre>
 </div>
 
-<p>Finally push everything up.</p>
+<p>Finally force push everything.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>git push -f origin master
 </code></pre>
