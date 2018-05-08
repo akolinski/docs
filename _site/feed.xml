@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-05-08T10:36:30+10:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-05-08T10:43:09+10:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
@@ -54,7 +54,7 @@
 
 &lt;p&gt;When running grunt sass:task it returns:&lt;/p&gt;
 
-&lt;p&gt;You need to have Ruby and Sass installed and in your PATH for this task to work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-sass/issues/229&quot; target=&quot;_blank&quot;&gt;You need to have Ruby and Sass installed and in your PATH for this task to work.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Fix:  &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install sass&lt;/code&gt;&lt;/p&gt;
 

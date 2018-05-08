@@ -62,7 +62,7 @@ You're all done!
 
 When running grunt sass:task it returns:
 
-You need to have Ruby and Sass installed and in your PATH for this task to work.
+<a href="https://github.com/gruntjs/grunt-contrib-sass/issues/229" target="_blank">You need to have Ruby and Sass installed and in your PATH for this task to work.</a>
 
 Fix:  ```gem install sass```
 
