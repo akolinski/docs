@@ -53,38 +53,75 @@
     <div class="col-md-9">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-          <h1 class="post-title mb-5" itemprop="name headline">How to git reset a branch</h1>
+          <h1 class="post-title mb-5" itemprop="name headline">RVM, Linuxbrew, Node NPM, Grunt</h1>
           <p class="post-meta">
-            <time datetime="2018-05-01T11:00:00+10:00" itemprop="datePublished">
+            <time datetime="2018-05-08T09:00:00+10:00" itemprop="datePublished">
               
-              May 1, 2018
+              May 8, 2018
             </time>
             </p>
         </header>
         <div class="post-content" itemprop="articleBody">
           <blockquote class="blockquote">
-Need to revert to a previous commit? Lets go back in time.
+    Set up software on a CentOS machine so we can run Grunt.
 </blockquote>
 
 <h2 id="lets-begin">Lets begin</h2>
 
-<p>Within the branch you want to revert to a previous commit. In Github or whatever version control app you are using find out the hash of the commit you want to revert to. Once retrieved follow these commands.</p>
+<p>If you are using vagrant.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git reset --hard ea9473eacd2
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant ssh
 </code></pre>
 </div>
 
-<p>Leave a nice commit message informing that you have reverted.</p>
+<p>Lets install <a target="blank" href="https://rvm.io/rvm/install">RVM</a> first. You may come across some problems. Follow the documentation closely and terminal prompts.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git commit -m "Reverting branch to ea9473eacd2"
+<p>Then install <a target="_blank" href="http://linuxbrew.sh/">linuxbrew</a>. It’s a fork of homebrew, a package manager for Linux.</p>
+
+<div class="alert alert-warning">
+    <h4 class="alert-heading mt-2 mb-3"><i class="fas fa-info-circle mr-2"></i> Important information to read :P</h4>
+    <p class="mb-0">Once installion is successful, in terminal it'll outline 'Next steps' which you have to follow to include brew in your PATH.</p>
+</div>
+
+<p>This next step will only work once the above is done correctly. Then to <a target="_blank" href="https://nodejs.org/en/download/package-manager/#macos">install node via a package manager</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>brew install node
 </code></pre>
 </div>
 
-<p>Finally force push everything.</p>
+<p>Then check if all is good.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git push -f origin master
+<div class="highlighter-rouge"><pre class="highlight"><code>node -v
 </code></pre>
 </div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm -v
+</code></pre>
+</div>
+
+<p>Now lets install <a target="_blank" href="https://gruntjs.com/getting-started">Grunt</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install -g grunt-cli
+</code></pre>
+</div>
+
+<p>Let’s now get our package.json file with all our node_modules to install the packages we need to start developing.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm install
+</code></pre>
+</div>
+
+<p>You’re all done!</p>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>When running grunt sass:task it returns:</p>
+
+<p>You need to have Ruby and Sass installed and in your PATH for this task to work.</p>
+
+<p>Fix:  <code class="highlighter-rouge">gem install sass</code></p>
+
+<p>You need to have the sass gem installed.</p>
 
         </div>
         

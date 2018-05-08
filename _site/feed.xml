@@ -1,27 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-05-01T17:00:32+10:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to git reset a branch</title><link href="http://localhost:4000/docs/git/2018/05/01/how-to-git-reset-a-branch.html" rel="alternate" type="text/html" title="How to git reset a branch" /><published>2018-05-01T11:00:00+10:00</published><updated>2018-05-01T11:00:00+10:00</updated><id>http://localhost:4000/docs/git/2018/05/01/how-to-git-reset-a-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/05/01/how-to-git-reset-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
-Need to revert to a previous commit? Lets go back in time.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/docs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/docs/" rel="alternate" type="text/html" /><updated>2018-05-08T10:36:30+10:00</updated><id>http://localhost:4000/docs/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/05/08/how-to-git-reset-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
 
-&lt;p&gt;Within the branch you want to revert to a previous commit. In Github or whatever version control app you are using find out the hash of the commit you want to revert to. Once retrieved follow these commands.&lt;/p&gt;
+&lt;p&gt;If you are using vagrant.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset --hard ea9473eacd2
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant ssh
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Leave a nice commit message informing that you have reverted.&lt;/p&gt;
+&lt;p&gt;Lets install &lt;a target=&quot;blank&quot; href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM&lt;/a&gt; first. You may come across some problems. Follow the documentation closely and terminal prompts.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Reverting branch to ea9473eacd2&quot;
+&lt;p&gt;Then install &lt;a target=&quot;_blank&quot; href=&quot;http://linuxbrew.sh/&quot;&gt;linuxbrew&lt;/a&gt;. It’s a fork of homebrew, a package manager for Linux.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-info-circle mr-2&quot;&gt;&lt;/i&gt; Important information to read :P&lt;/h4&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;Once installion is successful, in terminal it'll outline 'Next steps' which you have to follow to include brew in your PATH.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This next step will only work once the above is done correctly. Then to &lt;a target=&quot;_blank&quot; href=&quot;https://nodejs.org/en/download/package-manager/#macos&quot;&gt;install node via a package manager&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install node
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Finally force push everything.&lt;/p&gt;
+&lt;p&gt;Then check if all is good.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin master
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Need to revert to a previous commit? Lets go back in time.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now lets install &lt;a target=&quot;_blank&quot; href=&quot;https://gruntjs.com/getting-started&quot;&gt;Grunt&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g grunt-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Let’s now get our package.json file with all our node_modules to install the packages we need to start developing.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You’re all done!&lt;/p&gt;
+
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+
+&lt;p&gt;When running grunt sass:task it returns:&lt;/p&gt;
+
+&lt;p&gt;You need to have Ruby and Sass installed and in your PATH for this task to work.&lt;/p&gt;
+
+&lt;p&gt;Fix:  &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install sass&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You need to have the sass gem installed.&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Set up software on a CentOS machine so we can run Grunt.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="http://localhost:4000/docs/git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Need to tag your branch before you push to origin?
 &lt;/blockquote&gt;
 
