@@ -2,11 +2,7 @@
 Documenting using Jekyll.
 
 ```
-bundle exec jekyll serve
-```
-
-```
-bundle exec jekyll build
+bundle exec jekyll serve --config _config.yml, _config_dev.yml --port 4444 --watch
 ```
 
 ```
