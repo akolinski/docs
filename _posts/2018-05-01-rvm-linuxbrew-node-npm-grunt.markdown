@@ -3,7 +3,7 @@ layout: post
 title:  "RVM, Linuxbrew, Node NPM, Grunt"
 date:   2018-05-08 09:00:00 +1000
 categories: git
-url: rvm-linuxbrew,node-npm-grunt
+url: rvm-linuxbrew-node-npm-grunt
 ---
 
 <blockquote class="blockquote">

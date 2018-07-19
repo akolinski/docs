@@ -1,5 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-19T14:54:21+10:00</updated><id>http://localhost:4000/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/how-to-git-reset-a-branch.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/how-to-git-reset-a-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/how-to-git-reset-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-19T11:48:47+10:00</updated><id>http://localhost:4000/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    Sometimes you might have committed and pushed something that you need to revert. No worries!
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+
+&lt;p&gt;First you need to find the commit [id] from your Github/Bitbucket repo. Then use this command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset --hard 8cec4c7b726
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once reset you can add a commit message to show what you’ve done.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;reverting branch back to 8cec4c7b726&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then you need to force push the change on the branch.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin [branch_name]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
 
