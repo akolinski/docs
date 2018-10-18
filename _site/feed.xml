@@ -1,5 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-19T11:48:47+10:00</updated><id>http://localhost:4000/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-18T11:17:27+11:00</updated><id>http://localhost:4000/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    Creating a patch in GIT can help apply changes with the use of a command.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Checkout master/stable branch, create a new branch&lt;/li&gt;
+    &lt;li&gt;Make the changes and then add and write a nice commit message&lt;/li&gt;
+    &lt;li&gt;Run the command below. This will create a new file in current working directory.&lt;/li&gt;
+    &lt;li&gt;Afterwards move the patch file into a well named folder like /excluded for later use.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git format-patch -1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Please note!&lt;/h4&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;Only commit the patch file to the repo and apply the patch when needed. Following the steps underneath.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;applying-a-patch-no-output-means-patch-was-applied&quot;&gt;Applying a patch (No output means patch was applied)&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply patch_file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;revert-applied-patch&quot;&gt;Revert applied patch&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply -R patch_file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Sometimes you might have committed and pushed something that you need to revert. No worries!
 &lt;/blockquote&gt;
 
