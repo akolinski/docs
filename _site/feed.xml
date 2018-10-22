@@ -1,5 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-18T11:17:27+11:00</updated><id>http://localhost:4000/</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
-</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-22T11:17:06+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Free user documentation, research, tips, code snippets and templates.
+</subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to make changes to a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to make changes to a submodule in git" /><published>2018-10-22T10:00:00+11:00</published><updated>2018-10-22T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+
+&lt;p&gt;Let’s say our repositories base path is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This folder is where we have a .git folder to version control the entire /myproject source code.&lt;/p&gt;
+
+&lt;p&gt;Now let’s move into the folder where we version control something separately, for example an add_on called “boom”.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project/add_ons/boom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;“boom” is separately version controlled and has it’s own .git folder. We should see a hash next to the branch name in terminal. It’ll show what hash we are currently checked into. This hash should match the hash seen in the repository for “/my_project”. If it isn’t, we need to make sure we are checked into the correct hash and apply our changes.&lt;/p&gt;
+
+&lt;p&gt;For example an issue could be that the “/my_project” repository is showing the wrong hash for the folder “/my_project/add_ons/boom” with a hash of “686312069e6” but we need it to be “c2ef32b38b1”.&lt;/p&gt;
+
+&lt;p&gt;First of all we need to go into the folder of our add_on.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project/add_ons/boom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then checkout to the correct branch.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout c2ef32b38b1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then move back to our /my_project folder which will show a modified change in our git status.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Please add and commit these modified changes.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Changed hash to correct hash&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There we have it, the hash for the add_on will now be correct. Go to the repository and view the folder and the hash should show as correct.&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.</summary></entry><entry><title type="html">How to add a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to add a submodule in git" /><published>2018-10-22T09:00:00+11:00</published><updated>2018-10-22T09:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    When working in a repository you may want to version control a separate folder, this is how to do it.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+
+&lt;p&gt;First of all copy the folder into a folder on your computer out of your existing project. Then cd into the folder.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_submodule
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now follow these commands:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Initial Commit&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The next line will be the remote ssh address for the repository that you need to setup using Github.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin ssh://git:1234/adam/name_of_repo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We have just made that folder associated with our created git repository.&lt;/p&gt;
+
+&lt;p&gt;Next let’s bring in that submodule into our current working project.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Checkout into our working branch.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Make sure we have no changes and the latest code.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s be careful and branch out to a new branch.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout –b add_submodule
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next we add the submodule to the project we are currently working within.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule add ssh://git:1234/adam/name_of_repo.git add_ons/name_of_repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now lets go into that submodule and add, commit + push all of our changes.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd add_ons/name_of_repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit –m &quot;Adding submodule&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it we have added a submodule to our project.&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">When working in a repository you may want to version control a separate folder, this is how to do it.</summary></entry><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Creating a patch in GIT can help apply changes with the use of a command.
 &lt;/blockquote&gt;
 
@@ -12,9 +134,8 @@
     &lt;li&gt;Afterwards move the patch file into a well named folder like /excluded for later use.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git format-patch -1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git format-patch -1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
     &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Please note!&lt;/h4&gt;
@@ -23,15 +144,13 @@
 
 &lt;h3 id=&quot;applying-a-patch-no-output-means-patch-was-applied&quot;&gt;Applying a patch (No output means patch was applied)&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply patch_file
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply patch_file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;revert-applied-patch&quot;&gt;Revert applied patch&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply -R patch_file
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply -R patch_file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Sometimes you might have committed and pushed something that you need to revert. No worries!
 &lt;/blockquote&gt;
 
@@ -39,21 +158,18 @@
 
 &lt;p&gt;First you need to find the commit [id] from your Github/Bitbucket repo. Then use this command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset --hard 8cec4c7b726
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset --hard 8cec4c7b726
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Once reset you can add a commit message to show what you’ve done.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;reverting branch back to 8cec4c7b726&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;reverting branch back to 8cec4c7b726&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then you need to force push the change on the branch.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin [branch_name]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin [branch_name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
 
@@ -61,9 +177,8 @@
 
 &lt;p&gt;If you are using vagrant.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant ssh
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Lets install &lt;a target=&quot;blank&quot; href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM&lt;/a&gt; first. You may come across some problems. Follow the documentation closely and terminal prompts.&lt;/p&gt;
 
@@ -76,31 +191,26 @@
 
 &lt;p&gt;This next step will only work once the above is done correctly. Then to &lt;a target=&quot;_blank&quot; href=&quot;https://nodejs.org/en/download/package-manager/#macos&quot;&gt;install node via a package manager&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install node
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install node
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then check if all is good.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now lets install &lt;a target=&quot;_blank&quot; href=&quot;https://gruntjs.com/getting-started&quot;&gt;Grunt&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g grunt-cli
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g grunt-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Let’s now get our package.json file with all our node_modules to install the packages we need to start developing.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You’re all done!&lt;/p&gt;
 
@@ -120,30 +230,25 @@ Need to tag your branch before you push to origin?
 
 &lt;p&gt;Within the branch you want to push to origin, before you push, follow these steps.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch --tags
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git describe --tags
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git describe --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;That will return to you the previous tag. Which you can now iterate and go up one version number. Of course it’ll only return a tag if it previously had one.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag -a tag-1.0.0 -m 'tag-1.0.0'
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag -a tag-1.0.0 -m 'tag-1.0.0'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now you have to push the tags.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push --tags
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally push everything up.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin branch_name
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry><entry><title type="html">How to git rebase a local branch</title><link href="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin branch_name
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry><entry><title type="html">How to git rebase a local branch</title><link href="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Need to rebase your local branch before creating a pull request?
 &lt;/blockquote&gt;
 
@@ -151,36 +256,28 @@ Need to rebase your local branch before creating a pull request?
 
 &lt;p&gt;Within your current local branch add all of your current changes, commit and push them to origin.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Checkout out to master and and pull origin&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Checkout back to your local branch and rebase from master. Then force push the changes to origin.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin mylocalbranch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
 &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Be careful!&lt;/h4&gt;
@@ -196,21 +293,18 @@ The purpose of this documentation is to help with managing the version Ruby in a
 
 &lt;p&gt;&lt;a href=&quot;https://serverfault.com/questions/508235/uninstall-ruby-on-rails-on-centos-6&quot; target=&quot;_blank&quot;&gt;Uninstall ruby from CentOS&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum remove ruby
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum remove ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Provides a list of installed ruby binaries.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -qa | grep -i ruby
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rpm -qa | grep -i ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Provides current version of ruby that is running.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby -v
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;how-to-install-ruby-in-centos-version-5&quot;&gt;How to install ruby in Centos version 5&lt;/h2&gt;
 
@@ -218,33 +312,27 @@ The purpose of this documentation is to help with managing the version Ruby in a
 
 &lt;p&gt;Get the version of ruby as a zip in the root&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget ftp://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget ftp://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Unzip it&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar xvf ruby-2.4.2.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tar xvf ruby-2.4.2.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Enter the folder&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ruby-2.4.2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ruby-2.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure --enable-pthread
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./configure --enable-pthread
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;installing-ruby-locally-or-on-a-different-vm&quot;&gt;Installing ruby locally or on a different VM&lt;/h2&gt;
 
@@ -256,21 +344,17 @@ The purpose of this documentation is to help with managing the version of Node.j
 
 &lt;p&gt;Firstly I read this to get an understanding and what I need to remove within the CentOS VM: &lt;a href=&quot;https://hungred.com/how-to/completely-removing-nodejs-npm/&quot; target=&quot;blank&quot;&gt;Completely removing nodejs npm&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/lib/node_modules
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/lib/node_modules
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf npm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf npm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/lib/node_modules
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/local/lib/node_modules
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf npm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf npm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Check your Home directory for any “local” or “lib” or “include” folders, and delete any “node” or “node_modules” from there.&lt;/p&gt;
 
@@ -284,21 +368,17 @@ The purpose of this documentation is to help with managing the version of Node.j
 
 &lt;p&gt;Good article on &lt;a href=&quot;https://davidwalsh.name/nvm&quot; target=&quot;blank&quot;&gt;managing Node.js versions with nvm&lt;/a&gt;. Read about &lt;a href=&quot;https://github.com/creationix/nvm/blob/master/README.md#usage&quot; target=&quot;blank&quot;&gt;nvm usage&lt;/a&gt; and if you need information about &lt;a href=&quot;https://nodejs.org/en/download/releases/&quot; target=&quot;blank&quot;&gt;version releases of Node.js&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm install 7.0.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm install 7.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm use --delete-prefix v7.0.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm use --delete-prefix v7.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should now have Node.js running with an updated version and npm installed. Go ahead and install all other things like bower, grunt or whatever your development environment consists of.&lt;/p&gt;
 
@@ -306,9 +386,8 @@ The purpose of this documentation is to help with managing the version of Node.j
 
 &lt;p&gt;We found that we had to play around with the version of certain npm packages. The command below helped with identifying the npm package installed.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm list nameofpackage
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm list nameofpackage
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
@@ -316,33 +395,31 @@ The purpose of this documentation is to help with managing the version of Node.j
 
 &lt;p&gt;An interim solution of using grunt-image instead of grunt-contrib-imagemin was implemented. We came across one problem with grunt-image which was to do with &lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-copy/issues/21&quot;&gt;open file limits&lt;/a&gt;. Setting the open file limit of our VM’s higher helped the task run without any problems. However it was only an issue due to trying to compress 933 images. If we abstract out tasks to specific tasks it’ll run faster.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ulimit -n 10480
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ulimit -n 10480
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote class=&quot;blockquote&quot;&gt;Running Node.js version 7.0.0 with npm version 3.10.8&lt;/blockquote&gt;
 
 &lt;p&gt;Package.json&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Anonymous&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;description&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Anonymous&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Anonymous&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;devDependencies&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt-contrib-sass&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt-contrib-uglify&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3.1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt-contrib-watch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt-image&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;grunt-newer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.3.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;load-grunt-tasks&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3.5.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;lodash&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;4.17.4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;time-grunt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.4.0&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    &quot;name&quot;: &quot;Anonymous&quot;,
+    &quot;version&quot;: &quot;2.0.0&quot;,
+    &quot;description&quot;: &quot;Anonymous&quot;,
+    &quot;author&quot;: &quot;Anonymous&quot;,
+    &quot;devDependencies&quot;: {
+    &quot;grunt&quot;: &quot;1.0.1&quot;,
+    &quot;grunt-contrib-sass&quot;: &quot;1.0.0&quot;,
+    &quot;grunt-contrib-uglify&quot;: &quot;3.1.0&quot;,
+    &quot;grunt-contrib-watch&quot;: &quot;1.0.0&quot;,
+    &quot;grunt-image&quot;: &quot;3.0.0&quot;,
+    &quot;grunt-newer&quot;: &quot;1.3.0&quot;,
+    &quot;load-grunt-tasks&quot;: &quot;3.5.2&quot;,
+    &quot;lodash&quot;: &quot;4.17.4&quot;,
+    &quot;time-grunt&quot;: &quot;1.4.0&quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to help with managing the version of Node.js and NPM in a CentOS.</summary></entry><entry><title type="html">Image optimization checklist</title><link href="http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist.html" rel="alternate" type="text/html" title="Image optimization checklist" /><published>2017-09-21T09:01:00+10:00</published><updated>2017-09-21T09:01:00+10:00</updated><id>http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist</id><content type="html" xml:base="http://localhost:4000/digitalmarketing/2017/09/21/image-optimization-checklist.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].
 &lt;/blockquote&gt;
 
@@ -376,359 +453,4 @@ Automate, automate, automate: invest into automated tools and infrastructure tha
 
 &lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry><entry><title type="html">Google page speed checks</title><link href="http://localhost:4000/digitalmarketing/2017/09/21/google-page-speed-checks.html" rel="alternate" type="text/html" title="Google page speed checks" /><published>2017-09-21T09:00:00+10:00</published><updated>2017-09-21T09:00:00+10:00</updated><id>http://localhost:4000/digitalmarketing/2017/09/21/google-page-speed-checks</id><content type="html" xml:base="http://localhost:4000/digitalmarketing/2017/09/21/google-page-speed-checks.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
-The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;Google PageSpeed Insights&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;optimizing&quot;&gt;Optimizing&lt;/h2&gt;
-
-&lt;p&gt;Optimizing and image refers to the ability to make the file a smaller file size. A technique for reducing the file size is compression or delivering scaled image assets. “We are definitely not in a position to invent new compression techniques, but it’s important to understand the shape of the problem: RGBA pixels, bit-depth, and various optimization techniques.” &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt; Optimizing an image is directly referenced to the data stored in individual pixels. Reading the &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt; page from Google helps understand how to optimize raster images effectively.&lt;/p&gt;
-
-&lt;h3 id=&quot;compression&quot;&gt;Compression&lt;/h3&gt;
-
-&lt;p&gt;‘Image compression is a type of data compression applied to digital images, to reduce their cost for storage or transmission.’ &lt;a href=&quot;https://en.wikipedia.org/wiki/Image_compression&quot;&gt;Image compression&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;lossless-vs-lossy-image-compression&quot;&gt;Lossless vs lossy image compression&lt;/h4&gt;
-
-&lt;p&gt;Reading the heading &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Lossless vs lossy image compression&lt;/a&gt; from Google will give a more detailed reading of the key points below. The different types of compression are instigated by the file format you use. They use different algorithms to encode the data stored in a file.&lt;/p&gt;
-
-&lt;p&gt;Lossy compression: or irreversible compression is the class of data encoding methods that uses inexact approximations and partial data discarding to represent the content. These techniques are used to reduce data size for storage, handling, and transmitting content.&lt;/p&gt;
-
-&lt;p&gt;Lossless compression: is a class of data compression algorithms that allows the original data to be perfectly reconstructed from the compressed data.&lt;/p&gt;
-
-&lt;p&gt;By contrast, lossy compression permits reconstruction only of an approximation of the original data, though this usually improves compression rates (and therefore reduces file sizes).&lt;/p&gt;
-
-&lt;p&gt;A typical image optimization pipeline consists of two high level steps:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Image is processed with a “&lt;a href=&quot;https://en.wikipedia.org/wiki/Lossy_compression&quot;&gt;lossy&lt;/a&gt;” filter that eliminates some pixel data&lt;/li&gt;
-  &lt;li&gt;Image is processed with a “&lt;a href=&quot;https://en.wikipedia.org/wiki/Lossless_compression&quot;&gt;lossless&lt;/a&gt;” filter that compresses the pixel data&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;“So, what is the “optimal” configuration of lossy and lossless optimization? The answer depends on the image contents and your own criteria such as the tradeoff between filesize and artifacts introduced by lossy compression: in some cases you may want to skip lossy optimization to communicate intricate detail in its full fidelity, and in others you may be able to apply aggressive lossy optimization to reduce the filesize of the image asset. This is where your own judgment and context need to come into play - there is no one universal setting.&lt;/p&gt;
-
-&lt;p&gt;As a hands-on example, when using a lossy format such as JPEG, the compressor will typically expose a customisable “quality” setting (for example, the quality slider provided by the “Save for Web” functionality in Adobe Photoshop), which is typically a number between 1 and 100 that controls the inner workings of the specific collection of lossy and lossless algorithms. For best results, experiment with various quality settings for your images, and don’t be afraid to dial down the quality - the visual results are often very good and the filesize savings can be quite large.”&lt;/p&gt;
-
-&lt;h4 id=&quot;what-file-type-should-i-be-using-png-or-jpeg&quot;&gt;What file type should I be using (PNG or JPEG)&lt;/h4&gt;
-
-&lt;p&gt;Do you need to preserve fine detail with highest resolution? Use PNG.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;PNG does not apply any lossy compression algorithms beyond the choice of the size of the color palette. As a result, it will produce the highest quality image, but at a cost of significantly higher filesize than other formats. Use judiciously.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the image asset contains imagery composed of geometric shapes, consider converting it to a vector (SVG) format!&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If the image asset contains text, stop and reconsider. Text in images is not selectable, searchable, or “zoomable”. If you need to convey a custom look (for branding or other reasons), use a web font instead.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Are you optimizing a photo, screenshot, or a similar image asset? Use JPEG.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;JPEG uses a combination of lossy and lossless optimization to reduce filesize of the image asset. Try several JPEG quality levels to find the best quality vs. filesize tradeoff for your asset.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;delivering-scaled-image-assets&quot;&gt;Delivering scaled image assets&lt;/h3&gt;
-
-&lt;p&gt;As a result, one of the simplest and most effective image optimization techniques is to ensure that we are not shipping any more pixels than needed to display the asset at its intended size in the browser. Sounds simple, right? Unfortunately, most pages fail this test for many of their image assets: typically, they ship larger assets and rely on the browser to rescale them - which also consumes extra CPU resources - and display them at a lower resolution.&lt;/p&gt;
-
-&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;/h2&gt;
-
-&lt;h3 id=&quot;optimize-images&quot;&gt;Optimize images&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://tinypng.com/&quot;&gt;tinyjpg&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;image-test-scenario-1-jpg-square-image&quot;&gt;Image test scenario 1 (JPG) (Square image)&lt;/h4&gt;
-
-&lt;table class=&quot;table table-bordered&quot;&gt;
-    &lt;tr&gt;
-        &lt;th&gt;File size&lt;/th&gt;
-        &lt;th&gt;Image dimensions&lt;/th&gt;
-        &lt;th&gt;Google Page Speed&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;311 KB&lt;/th&gt;
-        &lt;th&gt;1440px width 1440px height&lt;/th&gt;
-        &lt;th&gt;50/100&lt;/th&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width.&lt;/p&gt;
-
-&lt;p&gt;For example: 245 x 2 = 490 width&lt;/p&gt;
-
-&lt;p&gt;Use photoshop on the original image. Image &amp;gt; Image size. Enter the new width and make sure the height automatically adjusts to scale the image. Use the save for web option. Save out the file at 100% quality with no options selected.&lt;/p&gt;
-
-&lt;p&gt;Then use &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; to apply lossy and lossless compression on the file.&lt;/p&gt;
-
-&lt;table class=&quot;table table-bordered&quot;&gt;
-    &lt;tr&gt;
-        &lt;th&gt;New file size&lt;/th&gt;
-        &lt;th&gt;New image dimensions&lt;/th&gt;
-        &lt;th&gt;Google Page Speed&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;41 KB&lt;/th&gt;
-        &lt;th&gt;490px width 490px height&lt;/th&gt;
-        &lt;th&gt;51/100&lt;/th&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&quot;image-test-scenario-2-jpg-long-image&quot;&gt;Image test scenario 2 (JPG) (Long image)&lt;/h4&gt;
-
-&lt;table class=&quot;table table-bordered&quot;&gt;
-    &lt;tr&gt;
-        &lt;th&gt;File size&lt;/th&gt;
-        &lt;th&gt;Image dimensions&lt;/th&gt;
-        &lt;th&gt;Google Page Speed&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;356 KB&lt;/th&gt;
-        &lt;th&gt;1440px width 2016px height&lt;/th&gt;
-        &lt;th&gt;51/100&lt;/th&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Changes: Lossy and lossless compression + delivering scaled image. Take the needed image size from inspect element and double the width and height&lt;/p&gt;
-
-&lt;p&gt;For example: 245 x 2 = 490 width
-For example: 343 x 2 = 686 height&lt;/p&gt;
-
-&lt;p&gt;Use photoshop and create a new file with the dimensions 490px width and 686px height. Drag the original image inside photoshop and scale the image without losing quality in the new dimensions. Use the save for web option. Save out the file at 100% quality with no options selected.&lt;/p&gt;
-
-&lt;p&gt;Then use &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; to apply lossy and lossless compression on the file.&lt;/p&gt;
-
-&lt;table class=&quot;table table-bordered&quot;&gt;
-    &lt;tr&gt;
-        &lt;th&gt;New file size&lt;/th&gt;
-        &lt;th&gt;New image dimensions&lt;/th&gt;
-        &lt;th&gt;Google Page Speed&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;th&gt;102 KB&lt;/th&gt;
-        &lt;th&gt;490px width 490px height&lt;/th&gt;
-        &lt;th&gt;53/100&lt;/th&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h4 id=&quot;testing-image-in-pagespeed&quot;&gt;Testing image in PageSpeed&lt;/h4&gt;
-
-&lt;p&gt;We are testing the threshold in Google to try and understand how they give recommendations on optimizing images. Currently the sites score sits at 96/100.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Image test 1000w x 1000h = 525kb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg made my PageSpeed go down from 96/100 to 66/100&lt;/p&gt;
-
-&lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
-
-&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing and resizing https://makeaweb.com.au/images/uploads/os-test-1000x1000.jpg could save 474.2KiB (90% reduction).&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Image test 500w x 500h - no compression = 199kb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-500x500.jpg made my PageSpeed go down from 96/100 to 84/100&lt;/p&gt;
-
-&lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-500x500.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
-
-&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing https://makeaweb.com.au/images/uploads/os-test-500x500.jpg could save 143.3KiB (72% reduction).&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Image test 1000w x 1000h - Compressed to file size of 500 by 500 image = 201kb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Adding this image https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg made my PageSpeed go down from 96/100 to 84/100&lt;/p&gt;
-
-&lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
-
-&lt;blockquote class=&quot;blockquote&quot;&gt;Compressing and resizing https://makeaweb.com.au/…uploads/os-test-1000x1000-compressed.jpg could save 145.7KiB (74% reduction).&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Image test 1000w x 1000h - Compressed to file size 55kb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Adding the same image but compressed to 55kb https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg made my PageSpeed go down from 96/100 to 89 / 100&lt;/p&gt;
-
-&lt;!-- &lt;img width=&quot;500&quot; height=&quot;500&quot; src=&quot;https://makeaweb.com.au/images/uploads/os-test-1000x1000-compressed-55kb.jpg&quot; alt=&quot;test&quot;&gt; --&gt;
-
-&lt;blockquote class=&quot;blockquote&quot;&gt;No image recommendations&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;what-we-found&quot;&gt;What we found&lt;/h4&gt;
-
-&lt;p&gt;Even if you compress and image down by the percentage needed recommended by google, it will still complain about scaling images down to needed size.&lt;/p&gt;
-
-&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;We found that optimizing images using &lt;a href=&quot;https://tinyjpg.com/&quot;&gt;tinyjpg&lt;/a&gt; over using photoshop has no real benefit. It is better to use Photoshop as you have more control over the type of compression that is being used.&lt;/p&gt;
-
-&lt;p&gt;Following the test in scenario 1 and 2 will give an improvement to page speed. I followed these methods for 5 images and got an improvement from 50/100 to 60/100. Each image will have different original image dimensions. Optimization of each image should be dealt with individually.&lt;/p&gt;
-
-&lt;p&gt;Using the &lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt; will help identify some keys points to consider when optimizing images. Make sure to use the correct image format for the situation. Lastly always ask yourself the question what value does the image bring. If the image doesn’t constitute meaning, what purpose does that image really have?&lt;/p&gt;
-
-&lt;h2 id=&quot;enable-compression&quot;&gt;Enable compression&lt;/h2&gt;
-
-&lt;p&gt;Make sure any files that are loaded externally or internally are compressed.&lt;/p&gt;
-
-&lt;h2 id=&quot;minify-javascript&quot;&gt;Minify JavaScript&lt;/h2&gt;
-
-&lt;p&gt;Make sure any JavaScript that is being used is using the minified version. Combined performance gain from enabling compression and minifying javascript for one file 79/100 to 85/100.&lt;/p&gt;
-
-&lt;h2 id=&quot;eliminate-render-blocking-javascript-and-css-in-above-the-fold-content&quot;&gt;Eliminate render-blocking JavaScript and CSS in above-the-fold content&lt;/h2&gt;
-
-&lt;p&gt;There is no real fix for this because we can’t simply remove css that we need. We do not want to inline CSS either.&lt;/p&gt;
-
-&lt;h2 id=&quot;minify-html&quot;&gt;Minify HTML&lt;/h2&gt;
-
-&lt;p&gt;We can minify stash embeds without much of a problem. However to remove the suggested message from Google we need to minify the whole template. We should be able to do this, we need to check whether jQuery functionality is still working once implemented. We had a couple of jQuery validation problems with jQuery in script tags in templates. JSLint was used to try to resolve this issue but to no avail. In page jQuery was abstracted to a page specific javascript file using Uglify. We had a score improve from 84/100 to 86/100.&lt;/p&gt;
-
-&lt;h2 id=&quot;reading&quot;&gt;Reading&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot;&gt;Google PageSpeed Insights&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Lossless vs lossy image compression&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Image_compression&quot;&gt;Image compression&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lossy_compression&quot;&gt;lossy&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Lossless_compression&quot;&gt;lossless&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/webp/docs/compression&quot;&gt;compression techniques&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/docs/digitalmarketing/2017/09/21/google-page-speed-checks.html&quot;&gt;image checklist&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this documentation is to identify the main offenders in reference to a page speed report. A series of tests will be carried out on fixing these problems. Notes on which improve the score the most will be recommended.</summary></entry><entry><title type="html">EE2 to EE3 upgrade</title><link href="http://localhost:4000/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html" rel="alternate" type="text/html" title="EE2 to EE3 upgrade" /><published>2017-09-08T10:28:48+10:00</published><updated>2017-09-08T10:28:48+10:00</updated><id>http://localhost:4000/expressionengine/2017/09/08/ee2-to-ee3-upgrade</id><content type="html" xml:base="http://localhost:4000/expressionengine/2017/09/08/ee2-to-ee3-upgrade.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
-Okay lets start upgrading EE2 to EE3.
-&lt;/blockquote&gt;
-
-&lt;p&gt;Currently we have two instances running.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;in the public folder we have our old EE2 instance running&lt;/li&gt;
-  &lt;li&gt;in the ee3 folder we have a fresh install of ee3 for testing purposes&lt;/li&gt;
-  &lt;li&gt;to run the upgrade and then revert back duplicate the public folder and rename to public_before_upgrade and take a dump of the db.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;You are now in a safe place.&lt;/p&gt;
-
-&lt;h2 id=&quot;ee2-instance&quot;&gt;EE2 instance&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Put current EE2 instance into a new vagrant box with current database.&lt;/li&gt;
-  &lt;li&gt;Libraries / core / Environment.php throwing errors&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We had to change the path in these files&lt;/p&gt;
-
-&lt;p&gt;public/libraries/core/Environment.php
-modified:   public/libraries/core/exception/ArgumentException.php
-modified:   public/system/expressionengine/config/config.php
-modified:   public/system/expressionengine/config/database.php
-modified:   public/system/expressionengine/third_party/ep_better_workflow/libraries/ep_status_transition.php&lt;/p&gt;
-
-&lt;p&gt;from&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('core/Environment.php');
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require_once ('libraries/core/Environment.php');
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;edit-configphp&quot;&gt;Edit config.php&lt;/h2&gt;
-
-&lt;p&gt;Update the stash_static_basepath &amp;amp;&amp;amp; stash_file_basepath in config.php&lt;/p&gt;
-
-&lt;p&gt;from&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/local/www-shared/ee-anon/assets/templates/stash-cache/';
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;to&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;assets/templates/stash-cache/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;so-we-are-going-to-rewrite-this-so-that-its-super-simple&quot;&gt;So we are going to rewrite this so that it’s super simple.&lt;/h2&gt;
-
-&lt;h2 id=&quot;vagrant-box&quot;&gt;Vagrant box&lt;/h2&gt;
-
-&lt;p&gt;Create a new virtual host.&lt;/p&gt;
-
-&lt;p&gt;Sites available show the conf.
-Sites enabled are sim links that enable the sites available.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant@scotchbox:~$ sudo su
-root@scotchbox:/home/vagrant# cd /etc/apache2/
-root@scotchbox:/etc/apache2# ll
-drwxr-xr-x   2 root root  4096 Nov  3  2015 sites-available/
-drwxr-xr-x   2 root root  4096 Jul 10  2015 sites-enabled/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You need to copy out this files if you want to be able to destroy these newly created scripts or setup a provising script in order to get it to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;upgrading-from-expressionengine-2-to-expressionengine3&quot;&gt;Upgrading from ExpressionEngine 2 to ExpressionEngine3&lt;/h2&gt;
-
-&lt;p&gt;When we are ready we need to copy files from EE2 old vm to this current EE2 (public folder). So we have the latest codebase and ensure that the files are not being tampered with. Once in place we have a few of things to do.&lt;/p&gt;
-
-&lt;blockquote&gt;Backup the current EE2 database and codebase.&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;1-uninstall-these-modules-and-delete-folders&quot;&gt;1. Uninstall these modules and delete folders&lt;/h3&gt;
-
-&lt;p&gt;I think this step is only needed if we actually bring files from the EE2 instance currently on our old VM’s to this new EE2 instance. This is because currently we cannot remove ANON Workflow from the current website.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;ANON Workflow&lt;/li&gt;
-  &lt;li&gt;NSM Live Look&lt;/li&gt;
-  &lt;li&gt;Sitemap&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Supersearch&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Make sure that any other modules, plugins, accessories, extensions and fieldtypes aren’t included!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;2-follow-steps-from-ee-docs&quot;&gt;2. Follow steps from EE docs&lt;/h3&gt;
-
-&lt;p&gt;Note * In the documentation where they recommend “putting ExpressionEngine 3 compatible third-party add-ons into the system/user/addons/ directory now.” Be sure to move the addons themes folders as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://docs.expressionengine.com/v3/installation/upgrade_from_2.x.html&quot;&gt;Follow the steps from 1 to point 6&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;3-set-permissions&quot;&gt;3. Set permissions&lt;/h3&gt;
-
-&lt;p&gt;chmod 777 system/user/config/config.php
-chmod 777 system/user/cache/
-chmod 777 system/user/templates/&lt;/p&gt;
-
-&lt;p&gt;Boom, we should now have EE3 running.&lt;/p&gt;
-
-&lt;h3 id=&quot;4-after-upgrade&quot;&gt;4. After upgrade&lt;/h3&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;Delete all calls to ep_better_workflow in exp_extensions table&lt;/li&gt;
-    &lt;li&gt;Delete all calls to Nsm_live_look_ext / dummy_hook in exp_extensions table&lt;/li&gt;
-    &lt;li&gt;Delete all calls to Absolute_total_results_ext in exp_extensions table&lt;/li&gt;
-    &lt;li&gt;Delete all exp_ep.. tables&lt;/li&gt;
-    &lt;li&gt;Delete all exp_super_search.. tables&lt;/li&gt;
-    &lt;li&gt;Delete exp_sitemap table ? TEST&lt;/li&gt;
-    &lt;li&gt;Delete exp_proform tables ?  TEST&lt;/li&gt;
-    &lt;li&gt;Delete exp_nsm tables ? TEST&lt;/li&gt;
-    &lt;li&gt;Delete exp_freeform tables ? TEST&lt;/li&gt;
-    &lt;li&gt;Remove Ep_better_workflow rows from exp_actions table&lt;/li&gt;
-    &lt;li&gt;Remove Super_search row from exp_actions table&lt;/li&gt;
-    &lt;li&gt;Open exp_modules and delete any references to modules that have been already uninstalled&lt;/li&gt;
-    &lt;li&gt;To be removed 'parent_is_bwf_draft' from `exp_relationships` for publisher to be able to install.&lt;/li&gt;
-    &lt;li&gt;Install all the plugins that need to be installed. Previous version of EE had plugin just appear we now need to actually click install.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">Okay lets start upgrading EE2 to EE3.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization&quot;&gt;Image Optimization&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam Kolinski</name></author><summary type="html">The purpose of this checklist is to help when optimizing your images. Please refer to the original documentation from Google [Image Optimization].</summary></entry></feed>
