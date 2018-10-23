@@ -1,46 +1,25 @@
 <footer class="site-footer mt-5 pt-4 pb-4">
-  <div class="container">
-
-    <div class="row justify-content-md-center">
-
-      <div class="col-md-4">
-        <ul class="list-unstyled">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="col-md-5">
-        <ul class="list-unstyled">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-9">
+                <p>{{ site.description | escape }}</p>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-9">
+                <ul class="list-unstyled">
+                    <li>
+                    {% if site.author %}
+                        Created by {{ site.author | escape }} from <a target="_blank" href="https://makeaweb.com.au/">MAKE A WEB</a>
+                        {% else %}
+                        {{ site.title | escape }}
+                    {% endif %}
+                    </li>
+                {% if site.email %}
+                    <li>Contact me at <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                {% endif %}
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="row justify-content-md-center">
-      <div class="col-md-9">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-
-  </div>
 </footer>

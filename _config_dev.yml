@@ -17,14 +17,12 @@ title: Docs
 email: info@makeaweb.com.au
 author: Adam Kolinski
 description: > # this means to ignore newlines until "baseurl:"
-  Free user documentation, research, tips, code snippets and templates.
+    Code, Design and User Experience (UX) related documentation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000/docs"
-twitter_username: MAKEAWEB_
-github_username:  akolinski
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
