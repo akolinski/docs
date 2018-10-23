@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<h1>Hello. I'm <span class="text-primary">Adam Kolinski</span>, a <span class="text-primary">Web Developer</span> living in Melbourne.</h1>
+<p class="h2">Hello, I'm <span class="text-primary">Adam Kolinski</span>, a <span class="text-primary">Web developer</span> living in Melbourne, born in London with Polish heritage. I like to write and read about anything Design, Code and User Experience (UX) related.</p>
+
+<p class="h2">✌️</p>
