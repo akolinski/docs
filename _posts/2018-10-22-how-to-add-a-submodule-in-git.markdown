@@ -21,7 +21,7 @@ git rm -r -f
 Then add a submodule using the command below.
 
 ```
-git submodule add ssh://git@stash.inside:7999/os/ee-acer-seo.git public/system/user/addons/acer_seo
+git submodule add url_to_repo path_you_want_it_to_clone
 ```
 
 You can then check what the registered submodules are using this command.
