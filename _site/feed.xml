@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-24T10:41:53+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T16:44:06+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to check for registered submodules</title><link href="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html" rel="alternate" type="text/html" title="How to check for registered submodules" /><published>2018-10-24T10:00:00+11:00</published><updated>2018-10-24T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules</id><content type="html" xml:base="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may need to check what submodules are registered.
 &lt;/blockquote&gt;
@@ -81,7 +81,24 @@
     When working in a repository you may want to version control a separate folder, this is how to do it.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+&lt;h2 id=&quot;adding-a-submodule-in-an-existing-repository&quot;&gt;Adding a submodule in an existing repository&lt;/h2&gt;
+
+&lt;p&gt;Please ensure the folder doesn’t already exist. If it does please remove that folder.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rm -r -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then add a submodule using the command below.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule add ssh://git@stash.inside:7999/os/ee-acer-seo.git public/system/user/addons/acer_seo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can then check what the registered submodules are using this command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git ls-files --stage | grep 160000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;adding-a-new-submodule-to-remote&quot;&gt;Adding a new submodule to remote&lt;/h2&gt;
 
 &lt;p&gt;First of all copy the folder into a folder on your computer out of your existing project. Then cd into the folder.&lt;/p&gt;
 

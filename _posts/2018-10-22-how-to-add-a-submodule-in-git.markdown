@@ -10,7 +10,27 @@ url: how-to-add-a-submodule-in-git
     When working in a repository you may want to version control a separate folder, this is how to do it.
 </blockquote>
 
-## Lets begin
+## Adding a submodule in an existing repository
+
+Please ensure the folder doesn't already exist. If it does please remove that folder.
+
+```
+git rm -r -f
+```
+
+Then add a submodule using the command below.
+
+```
+git submodule add ssh://git@stash.inside:7999/os/ee-acer-seo.git public/system/user/addons/acer_seo
+```
+
+You can then check what the registered submodules are using this command.
+
+```
+git ls-files --stage | grep 160000
+```
+
+## Adding a new submodule to remote
 
 First of all copy the folder into a folder on your computer out of your existing project. Then cd into the folder.
 
