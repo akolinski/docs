@@ -15,13 +15,19 @@ url: how-to-add-a-submodule-in-git
 Please ensure the folder doesn't already exist. If it does please remove that folder.
 
 ```
-git rm -r -f
+git rm -r -f path_to_folder
 ```
 
-Then add a submodule using the command below.
+&
 
 ```
-git submodule add url_to_repo path_you_want_it_to_clone
+rm -r -f path_to_folder
+```
+
+Then add a submodule using the command below from the root. Where the .gitmodules file lives.
+
+```
+git submodule add url_to_repo path_you_want_it_to_clone_too
 ```
 
 You can then check what the registered submodules are using this command.
