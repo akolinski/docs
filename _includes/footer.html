@@ -1,16 +1,11 @@
 <footer class="site-footer mt-5 pt-4 pb-4">
     <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col-12 col-md-9">
-                <p>{{ site.description | escape }}</p>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-md-10">
                 <ul class="list-unstyled">
                     <li>
                     {% if site.author %}
-                        Created by {{ site.author | escape }} from <a target="_blank" href="https://makeaweb.com.au/">MAKE A WEB</a>
+                        Website developed by {{ site.author | escape }} - <a target="_blank" href="https://makeaweb.com.au/">MAKE A WEB</a>
                         {% else %}
                         {{ site.title | escape }}
                     {% endif %}
