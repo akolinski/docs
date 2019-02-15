@@ -14,6 +14,8 @@ url: how-to-set-up-a-vue-js-project
 
 Before we start let's update our node.js version. <a href="https://nodejs.org/en/" target="blank">Install the one "Recommeneded For Most Users"</a>.
 
+Okay, now open up your terminal <i>Neo</i>.
+
 Install or Update your NPM version
 
 ```
