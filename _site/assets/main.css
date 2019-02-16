@@ -4787,12 +4787,18 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 
+.page-heading-bg {
+  background: #007bff;
+  background: linear-gradient(to right, #007bff, #45d4ff);
+  color: #FFF;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4); }
+
 blockquote {
   padding: 10px 20px;
   border-left: 5px solid #dee2e6; }
 
 .site-header {
-  border-bottom: solid 2px #dee2e6; }
+  border-bottom: none; }
 
 .site-title {
   color: #6D7883;

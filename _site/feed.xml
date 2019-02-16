@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="https://akolinski.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//" rel="alternate" type="text/html" /><updated>2019-02-15T13:27:06+11:00</updated><id>https://akolinski.github.io//feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="https://akolinski.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//" rel="alternate" type="text/html" /><updated>2019-02-16T14:06:19+11:00</updated><id>https://akolinski.github.io//feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
 </subtitle><author><name>Adam Kolinski</name></author><entry><title type="html">How to set up a Vue.js project</title><link href="https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project.html" rel="alternate" type="text/html" title="How to set up a Vue.js project" /><published>2019-02-15T10:00:00+11:00</published><updated>2019-02-15T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project</id><content type="html" xml:base="https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.
 &lt;/blockquote&gt;
 
-&lt;h1 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h1&gt;
+&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
 
 &lt;p&gt;Before we start let’s update our node.js version. &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;blank&quot;&gt;Install the one “Recommeneded For Most Users”&lt;/a&gt;.&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yarn global add @vue/cli
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;create-a-new-project&quot;&gt;Create a new project&lt;/h2&gt;
+&lt;h3 id=&quot;create-a-new-project&quot;&gt;Create a new project&lt;/h3&gt;
 
 &lt;p&gt;To create your project using the GUI&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vue create proejct_name
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;start-developing-and-serve-your-website&quot;&gt;Start developing and serve your website&lt;/h2&gt;
+&lt;h3 id=&quot;start-developing-and-serve-your-website&quot;&gt;Start developing and serve your website&lt;/h3&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vue ui
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -56,7 +56,7 @@
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue.js&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://cli.vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue Cli 3 documentation&lt;/a&gt;&lt;br /&gt;

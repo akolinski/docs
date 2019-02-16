@@ -1,10 +1,10 @@
-<header class="site-header mb-5 pt-4 pb-4">
+<header class="site-header pt-4 pb-4">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-5">
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
-        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        <a class="site-title" href="{{ "/" | relative_url }}">Home</a>
       </div>
       <div class="col-5">
         {% if page_paths %}

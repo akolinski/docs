@@ -10,7 +10,7 @@ url: how-to-set-up-a-vue-js-project
     Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.
 </blockquote>
 
-# Lets begin
+## Lets begin
 
 Before we start let's update our node.js version. <a href="https://nodejs.org/en/" target="blank">Install the one "Recommeneded For Most Users"</a>.
 
@@ -40,7 +40,7 @@ Install vue command line tool
 yarn global add @vue/cli
 ```
 
-## Create a new project
+### Create a new project
 
 To create your project using the GUI
 
@@ -54,7 +54,7 @@ You can also create it manually
 vue create proejct_name
 ```
 
-## Start developing and serve your website
+### Start developing and serve your website
 
 ```
 vue ui
@@ -71,7 +71,7 @@ There you have it and that's how we get a vue.js project started.
 <br>
 <hr>
 <br>
-### References
+#### References
 
 <a href="https://vuejs.org/" target="blank">Vue.js</a><br>
 <a href="https://cli.vuejs.org/" target="blank">Vue Cli 3 documentation</a><br>
