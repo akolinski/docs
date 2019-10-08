@@ -1,273 +1,324 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-23T11:06:28+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-08T14:28:20+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
 </subtitle><author><name>Adam</name></author><entry><title type="html">Vue.js research</title><link href="http://localhost:4000/git/2019/09/23/vue-js-research.html" rel="alternate" type="text/html" title="Vue.js research" /><published>2019-09-23T09:00:00+10:00</published><updated>2019-09-23T09:00:00+10:00</updated><id>http://localhost:4000/git/2019/09/23/vue-js-research</id><content type="html" xml:base="http://localhost:4000/git/2019/09/23/vue-js-research.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+## Introduction
 
-&lt;p&gt;Some text.&lt;/p&gt;
+Some text.
 
-&lt;h3 id=&quot;search-engine-optimisation-seo&quot;&gt;Search engine optimisation (SEO)&lt;/h3&gt;
+### Search engine optimisation (SEO)
 
-&lt;h3 id=&quot;caching&quot;&gt;Caching&lt;/h3&gt;
+### Caching
 
-&lt;h3 id=&quot;jquery-or-vue&quot;&gt;jQuery or Vue&lt;/h3&gt;
+#### Server side cache
 
-&lt;p&gt;Did you know that you can incorporate Vue into your project the same way that you would incorporate jQuery. In this &lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt; they provide examples for capturing user inputs, storing user inputs, toggling classes, hiding and showing and submitting forms.&lt;/p&gt;
+Caching is a commonly used technique to improve the performance of any application, be it desktop, mobile or web. When dealing with web applications we can make good use of client-side caching using response headers that all browsers currently support. But, what if we have a complex and heavy page that takes 2 second to generate the HTML output?Even if we enable client-side cache for this page, the web server will still need to render the page for each different user accessing our web application. Think about the home page of a large news portal; do they process their HTML over and over again for each visitor?
 
-&lt;p&gt;It is definitely ok to use jQuery if it suits you! Vue is also a pretty nice abstraction for small sites that don’t need a lot of overhead. Vue is comparable in size, easy to reason about, and it’s fairly trivial to switch small pieces of functionality to Vue without rewriting your HTML in JavaScript.&lt;/p&gt;
+This is where server-side cache comes in handy. The goal of server side cache is responding to the same content for the same request independently of the client’s request. In our example above, the first request that reaches our server would still take 2 seconds to generate the HTML, but the following requests would hit the cache instead and the server would be able to send the response in a few milliseconds.
 
-&lt;p&gt;Due to Vue’s flexibility, it’s also easy to transition this code to a build step and component structures if you’d like to adopt a more complex structure over time. The nice thing about the flexibility to choose either way of incorporating Vue into your project means that you’re not pressed to change your style of working all at once, and you can even make changes slowly over time. This is why people call Vue the progressive framework.&lt;/p&gt;
+There are many ways of doing it, it could be done with NGINX or a CDN like CloudFlare, but in this example we’ll see how to do it with Node.js and Express with minimal work and in a flexible way.
 
-&lt;h3 id=&quot;bootstrap-5&quot;&gt;Bootstrap 5&lt;/h3&gt;
+READ ABOUT CLOUDFRONT
 
-&lt;h3 id=&quot;expressionengine&quot;&gt;ExpressionEngine&lt;/h3&gt;
+### jQuery or Vue
 
-&lt;p&gt;Having a thin PHP layer to still use what we have in place.&lt;/p&gt;
+Did you know that you can incorporate Vue into your project the same way that you would incorporate jQuery. In this &lt;a href='https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/' target='_blank'&gt;article&lt;/a&gt; they provide examples for capturing user inputs, storing user inputs, toggling classes, hiding and showing and submitting forms.
 
-&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+It is definitely ok to use jQuery if it suits you! Vue is also a pretty nice abstraction for small sites that don’t need a lot of overhead. Vue is comparable in size, easy to reason about, and it’s fairly trivial to switch small pieces of functionality to Vue without rewriting your HTML in JavaScript.
 
-&lt;p&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/&quot; target=&quot;blank&quot;&gt;Vue.js And SEO: How To Optimize Reactive Websites For Search Engines And Bots&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;blank&quot;&gt;Replacing jQuery With Vue.js: No Build Step Necessary&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.</summary></entry><entry><title type="html">How to set up a Vue.js project</title><link href="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html" rel="alternate" type="text/html" title="How to set up a Vue.js project" /><published>2019-02-15T10:00:00+11:00</published><updated>2019-02-15T10:00:00+11:00</updated><id>http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project</id><content type="html" xml:base="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+Due to Vue’s flexibility, it’s also easy to transition this code to a build step and component structures if you’d like to adopt a more complex structure over time. The nice thing about the flexibility to choose either way of incorporating Vue into your project means that you’re not pressed to change your style of working all at once, and you can even make changes slowly over time. This is why people call Vue the progressive framework.
+
+### Bootstrap 5
+
+Bootstrap is removing jQuery as a dependency when using the framework. Moving over to using Vue.js and pure javascript is the move the industry is leaning towards.
+
+### ExpressionEngine
+
+Having a thin PHP layer to still use what we have in place.
+
+#### References
+
+&lt;a href=&quot;https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/&quot; target=&quot;blank&quot;&gt;Vue.js And SEO: How To Optimize Reactive Websites For Search Engines And Bots&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;blank&quot;&gt;Replacing jQuery With Vue.js: No Build Step Necessary&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0&quot; target=&quot;blank&quot;&gt;Simple server side cache for Express.js with Node.js&lt;/a&gt;&lt;br&gt;</content><author><name>Adam</name></author><summary type="html">We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.</summary></entry><entry><title type="html">How to set up a Vue.js project</title><link href="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html" rel="alternate" type="text/html" title="How to set up a Vue.js project" /><published>2019-02-15T10:00:00+11:00</published><updated>2019-02-15T10:00:00+11:00</updated><id>http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project</id><content type="html" xml:base="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;Before we start let’s update our node.js version. &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;blank&quot;&gt;Install the one “Recommeneded For Most Users”&lt;/a&gt;.&lt;/p&gt;
+Before we start let's update our node.js version. &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;blank&quot;&gt;Install the one &quot;Recommeneded For Most Users&quot;&lt;/a&gt;.
 
-&lt;p&gt;Okay, now open up your terminal &lt;i&gt;Neo&lt;/i&gt;.&lt;/p&gt;
+Okay, now open up your terminal &lt;i&gt;Neo&lt;/i&gt;.
 
-&lt;p&gt;Install or Update your NPM version&lt;/p&gt;
+Install or Update your NPM version
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install npm@latest -g
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+npm install npm@latest -g
+```
 
-&lt;p&gt;Install or Update your Homebrew version&lt;/p&gt;
+Install or Update your Homebrew version
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+brew update
+```
 
-&lt;p&gt;Install or Update your Yarn version&lt;/p&gt;
+Install or Update your Yarn version
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install yarn or brew upgrade yarn
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+brew install yarn or brew upgrade yarn
+```
 
-&lt;p&gt;Install vue command line tool&lt;/p&gt;
+Install vue command line tool
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yarn global add @vue/cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+yarn global add @vue/cli
+```
 
-&lt;h3 id=&quot;create-a-new-project&quot;&gt;Create a new project&lt;/h3&gt;
+### Create a new project
 
-&lt;p&gt;To create your project using the GUI&lt;/p&gt;
+To create your project using the GUI
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vue ui
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+vue ui
+```
 
-&lt;p&gt;You can also create it manually&lt;/p&gt;
+You can also create it manually
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vue create proejct_name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+vue create proejct_name
+```
 
-&lt;h3 id=&quot;start-developing-and-serve-your-website&quot;&gt;Start developing and serve your website&lt;/h3&gt;
+### Start developing and serve your website
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vue ui
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+vue ui
+```
 
-&lt;p&gt;Click into your project and click on “tasks, serve, run task, open app” or you can run:&lt;/p&gt;
+Click into your project and click on &quot;tasks, serve, run task, open app&quot; or you can run:
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yarn serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;There you have it and that’s how we get a vue.js project started.
-&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
+```
+yarn serve
+```
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+There you have it and that's how we get a vue.js project started.
+&lt;br&gt;
+&lt;hr&gt;
+&lt;br&gt;
+#### References
 
-&lt;p&gt;&lt;a href=&quot;https://vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue.js&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://cli.vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue Cli 3 documentation&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://bootstrap-vue.js.org/&quot; target=&quot;blank&quot;&gt;Integrated Bootstrap framework&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.</summary></entry><entry><title type="html">How to check for registered submodules</title><link href="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html" rel="alternate" type="text/html" title="How to check for registered submodules" /><published>2018-10-24T10:00:00+11:00</published><updated>2018-10-24T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules</id><content type="html" xml:base="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;a href=&quot;https://vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue.js&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://cli.vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue Cli 3 documentation&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://bootstrap-vue.js.org/&quot; target=&quot;blank&quot;&gt;Integrated Bootstrap framework&lt;/a&gt;&lt;br&gt;</content><author><name>Adam</name></author><summary type="html">Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.</summary></entry><entry><title type="html">How to check for registered submodules</title><link href="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html" rel="alternate" type="text/html" title="How to check for registered submodules" /><published>2018-10-24T10:00:00+11:00</published><updated>2018-10-24T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules</id><content type="html" xml:base="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may need to check what submodules are registered.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;Most of the time you can do this by opening the .gitmodules file in the root folder. Which will list the submodules registered to the project. So when you run the command below it will bring in the submodules.&lt;/p&gt;
+Most of the time you can do this by opening the .gitmodules file in the root folder. Which will list the submodules registered to the project. So when you run the command below it will bring in the submodules.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule update --init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git submodule update --init
+```
 
-&lt;p&gt;Sometimes you may run into an issue in a repository when other unidentified modules are outlined when running the command above.&lt;/p&gt;
+Sometimes you may run into an issue in a repository when other unidentified modules are outlined when running the command above.
 
-&lt;p&gt;Check which submodules are registered in the cache using this command:&lt;/p&gt;
+Check which submodules are registered in the cache using this command:
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git ls-files --stage | grep 160000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git ls-files --stage | grep 160000
+```
 
-&lt;p&gt;You will now have a list of the submodule in the stage area. Remove any paths that you do not want.&lt;/p&gt;
+You will now have a list of the submodule in the stage area. Remove any paths that you do not want.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rm --cached Example/Folder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git rm --cached Example/Folder
+```
 
-&lt;p&gt;Try the update submodule command again and everything will be dandy!
-&lt;br /&gt;&lt;/p&gt;
-&lt;hr /&gt;
+Try the update submodule command again and everything will be dandy!
+&lt;br&gt;
+&lt;hr&gt;
+&lt;br&gt;
+### Reference
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule&quot; target=&quot;blank&quot;&gt;No submodule mapping found in .gitmodule for a path that’s not a submodule&lt;/a&gt;&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may need to check what submodules are registered.</summary></entry><entry><title type="html">How to make changes to a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to make changes to a submodule in git" /><published>2018-10-22T10:00:00+11:00</published><updated>2018-10-22T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule&quot; target=&quot;blank&quot;&gt;No submodule mapping found in .gitmodule for a path that's not a submodule&lt;/a&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may need to check what submodules are registered.</summary></entry><entry><title type="html">How to make changes to a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to make changes to a submodule in git" /><published>2018-10-22T10:00:00+11:00</published><updated>2018-10-22T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;Let’s say our repositories base path is:&lt;/p&gt;
+Let's say our repositories base path is:
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_project
+```
 
-&lt;p&gt;This folder is where we have a .git folder to version control the entire /myproject source code.&lt;/p&gt;
+This folder is where we have a .git folder to version control the entire /myproject source code.
 
-&lt;p&gt;Now let’s move into the folder where we version control something separately, for example an add_on called “boom”.&lt;/p&gt;
+Now let's move into the folder where we version control something separately, for example an add_on called &quot;boom&quot;.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project/add_ons/boom
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_project/add_ons/boom
+```
 
-&lt;p&gt;“boom” is separately version controlled and has it’s own .git folder. We should see a hash next to the branch name in terminal. It’ll show what hash we are currently checked into. This hash should match the hash seen in the repository for “/my_project”. If it isn’t, we need to make sure we are checked into the correct hash and apply our changes.&lt;/p&gt;
+&quot;boom&quot; is separately version controlled and has it's own .git folder. We should see a hash next to the branch name in terminal. It'll show what hash we are currently checked into. This hash should match the hash seen in the repository for &quot;/my_project&quot;. If it isn't, we need to make sure we are checked into the correct hash and apply our changes.
 
-&lt;p&gt;For example an issue could be that the “/my_project” repository is showing the wrong hash for the folder “/my_project/add_ons/boom” with a hash of “686312069e6” but we need it to be “c2ef32b38b1”.&lt;/p&gt;
+For example an issue could be that the &quot;/my_project&quot; repository is showing the wrong hash for the folder &quot;/my_project/add_ons/boom&quot; with a hash of &quot;686312069e6&quot; but we need it to be &quot;c2ef32b38b1&quot;.
 
-&lt;p&gt;First of all we need to go into the folder of our add_on.&lt;/p&gt;
+First of all we need to go into the folder of our add_on.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project/add_ons/boom
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_project/add_ons/boom
+```
 
-&lt;p&gt;Then checkout to the correct branch.&lt;/p&gt;
+Then checkout to the correct branch.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout c2ef32b38b1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git checkout c2ef32b38b1
+```
 
-&lt;p&gt;Then move back to our /my_project folder which will show a modified change in our git status.&lt;/p&gt;
+Then move back to our /my_project folder which will show a modified change in our git status.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_project
+```
 
-&lt;p&gt;Please add and commit these modified changes.&lt;/p&gt;
+Please add and commit these modified changes.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git add .
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Changed hash to correct hash&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git commit -m &quot;Changed hash to correct hash&quot;
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git push origin &lt;branch_name&gt;
+```
 
-&lt;p&gt;There we have it, the hash for the add_on will now be correct. Go to the repository and view the folder and the hash should show as correct.&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.</summary></entry><entry><title type="html">How to add a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to add a submodule in git" /><published>2018-10-22T09:00:00+11:00</published><updated>2018-10-22T09:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+There we have it, the hash for the add_on will now be correct. Go to the repository and view the folder and the hash should show as correct.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.</summary></entry><entry><title type="html">How to add a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to add a submodule in git" /><published>2018-10-22T09:00:00+11:00</published><updated>2018-10-22T09:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may want to version control a separate folder, this is how to do it.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;adding-a-submodule-in-an-existing-repository&quot;&gt;Adding a submodule in an existing repository&lt;/h2&gt;
+## Adding a submodule in an existing repository
 
-&lt;p&gt;Please ensure the folder doesn’t already exist. If it does please remove that folder.&lt;/p&gt;
+Please ensure the folder doesn't already exist. If it does please remove that folder.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rm -r -f path_to_folder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git rm -r -f path_to_folder
+```
 
-&lt;p&gt;&amp;amp;&lt;/p&gt;
+&amp;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -r -f path_to_folder
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+rm -r -f path_to_folder
+```
 
-&lt;p&gt;Then add a submodule using the command below from the root. Where the .gitmodules file lives.&lt;/p&gt;
+Then add a submodule using the command below from the root. Where the .gitmodules file lives.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule add url_to_repo path_you_want_it_to_clone_too
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git submodule add url_to_repo path_you_want_it_to_clone_too
+```
 
-&lt;p&gt;You can then check what the registered submodules are using this command.&lt;/p&gt;
+You can then check what the registered submodules are using this command.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git ls-files --stage | grep 160000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git ls-files --stage | grep 160000
+```
 
-&lt;h2 id=&quot;adding-a-new-submodule-to-remote&quot;&gt;Adding a new submodule to remote&lt;/h2&gt;
+## Adding a new submodule to remote
 
-&lt;p&gt;First of all copy the folder into a folder on your computer out of your existing project. Then cd into the folder.&lt;/p&gt;
+First of all copy the folder into a folder on your computer out of your existing project. Then cd into the folder.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_submodule
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_submodule
+```
 
-&lt;p&gt;Now follow these commands:&lt;/p&gt;
+Now follow these commands:
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git init
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add --all
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git add --all
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;Initial Commit&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git commit -m &quot;Initial Commit&quot;
+```
 
-&lt;p&gt;The next line will be the remote ssh address for the repository that you need to setup using Github.&lt;/p&gt;
+The next line will be the remote ssh address for the repository that you need to setup using Github.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin ssh://git:1234/adam/name_of_repo.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git remote add origin ssh://git:1234/adam/name_of_repo.git
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git push -u origin master
+```
 
-&lt;p&gt;We have just made that folder associated with our created git repository.&lt;/p&gt;
+We have just made that folder associated with our created git repository.
 
-&lt;p&gt;Next let’s bring in that submodule into our current working project.&lt;/p&gt;
+Next let's bring in that submodule into our current working project.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /my_project
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd /my_project
+```
 
-&lt;p&gt;Checkout into our working branch.&lt;/p&gt;
+Checkout into our working branch.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout &amp;lt;branch_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git checkout &lt;branch_name&gt;
+```
 
-&lt;p&gt;Make sure we have no changes and the latest code.&lt;/p&gt;
+Make sure we have no changes and the latest code.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git status
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git status
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin &amp;lt;branch_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git pull origin &lt;branch_name&gt;
+```
 
-&lt;p&gt;Let’s be careful and branch out to a new branch.&lt;/p&gt;
+Let's be careful and branch out to a new branch.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout –b add_submodule
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git checkout –b add_submodule
+```
 
-&lt;p&gt;Next we add the submodule to the project we are currently working within.&lt;/p&gt;
+Next we add the submodule to the project we are currently working within.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule add ssh://git:1234/adam/name_of_repo.git add_ons/name_of_repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git submodule add ssh://git:1234/adam/name_of_repo.git add_ons/name_of_repo
+```
 
-&lt;p&gt;Now lets go into that submodule and add, commit + push all of our changes.&lt;/p&gt;
+Now lets go into that submodule and add, commit + push all of our changes.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd add_ons/name_of_repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+cd add_ons/name_of_repo
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git status
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git status
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit –m &quot;Adding submodule&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git commit –m &quot;Adding submodule&quot;
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch_name&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git push origin &lt;branch_name&gt;
+```
 
-&lt;p&gt;That’s it we have added a submodule to our project.&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may want to version control a separate folder, this is how to do it.</summary></entry><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+That's it we have added a submodule to our project.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may want to version control a separate folder, this is how to do it.</summary></entry><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Creating a patch in GIT can help apply changes with the use of a command.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
 &lt;ol&gt;
     &lt;li&gt;Checkout master/stable branch, create a new branch&lt;/li&gt;
@@ -276,155 +327,181 @@
     &lt;li&gt;Afterwards move the patch file into a well named folder like /excluded for later use.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git format-patch -1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git format-patch -1
+```
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
     &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Please note!&lt;/h4&gt;
     &lt;p class=&quot;mb-0&quot;&gt;Only commit the patch file to the repo and apply the patch when needed. Following the steps underneath.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;applying-a-patch-no-output-means-patch-was-applied&quot;&gt;Applying a patch (No output means patch was applied)&lt;/h3&gt;
+### Applying a patch (No output means patch was applied)
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply patch_file
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git apply patch_file
+```
 
-&lt;h3 id=&quot;revert-applied-patch&quot;&gt;Revert applied patch&lt;/h3&gt;
+### Revert applied patch
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git apply -R patch_file
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+```
+git apply -R patch_file
+```</content><author><name>Adam</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Sometimes you might have committed and pushed something that you need to revert. No worries!
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;First you need to find the commit [id] from your Github/Bitbucket repo. Then use this command.&lt;/p&gt;
+First you need to find the commit [id] from your Github/Bitbucket repo. Then use this command.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset --hard 8cec4c7b726
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git reset --hard 8cec4c7b726
+```
 
-&lt;p&gt;Once reset you can add a commit message to show what you’ve done.&lt;/p&gt;
+Once reset you can add a commit message to show what you've done.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;reverting branch back to 8cec4c7b726&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git commit -m &quot;reverting branch back to 8cec4c7b726&quot;
+```
 
-&lt;p&gt;Then you need to force push the change on the branch.&lt;/p&gt;
+Then you need to force push the change on the branch.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin [branch_name]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+```
+git push -f origin [branch_name]
+```</content><author><name>Adam</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;If you are using vagrant.&lt;/p&gt;
+If you are using vagrant.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vagrant ssh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+vagrant ssh
+```
 
-&lt;p&gt;Lets install &lt;a target=&quot;blank&quot; href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM&lt;/a&gt; first. You may come across some problems. Follow the documentation closely and terminal prompts.&lt;/p&gt;
+Lets install &lt;a target=&quot;_blank&quot; href=&quot;https://rvm.io/rvm/install&quot; target=&quot;blank&quot;&gt;RVM&lt;/a&gt; first. You may come across some problems. Follow the documentation closely and terminal prompts.
 
-&lt;p&gt;Then install &lt;a target=&quot;_blank&quot; href=&quot;http://linuxbrew.sh/&quot;&gt;linuxbrew&lt;/a&gt;. It’s a fork of homebrew, a package manager for Linux.&lt;/p&gt;
+Then install &lt;a target=&quot;_blank&quot; href=&quot;http://linuxbrew.sh/&quot;&gt;linuxbrew&lt;/a&gt;. It's a fork of homebrew, a package manager for Linux.
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
     &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-info-circle mr-2&quot;&gt;&lt;/i&gt; Important information to read :P&lt;/h4&gt;
     &lt;p class=&quot;mb-0&quot;&gt;Once installion is successful, in terminal it'll outline 'Next steps' which you have to follow to include brew in your PATH.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This next step will only work once the above is done correctly. Then to &lt;a target=&quot;_blank&quot; href=&quot;https://nodejs.org/en/download/package-manager/#macos&quot;&gt;install node via a package manager&lt;/a&gt;.&lt;/p&gt;
+This next step will only work once the above is done correctly. Then to &lt;a target=&quot;_blank&quot; href=&quot;https://nodejs.org/en/download/package-manager/#macos&quot;&gt;install node via a package manager&lt;/a&gt;.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install node
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+brew install node
+```
 
-&lt;p&gt;Then check if all is good.&lt;/p&gt;
+Then check if all is good.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+node -v
+```
 
-&lt;p&gt;Now lets install &lt;a target=&quot;_blank&quot; href=&quot;https://gruntjs.com/getting-started&quot;&gt;Grunt&lt;/a&gt;.&lt;/p&gt;
+```
+npm -v
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g grunt-cli
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Now lets install &lt;a target=&quot;_blank&quot; href=&quot;https://gruntjs.com/getting-started&quot;&gt;Grunt&lt;/a&gt;.
 
-&lt;p&gt;Let’s now get our package.json file with all our node_modules to install the packages we need to start developing.&lt;/p&gt;
+```
+npm install -g grunt-cli
+```
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+Let's now get our package.json file with all our node_modules to install the packages we need to start developing.
 
-&lt;p&gt;You’re all done!&lt;/p&gt;
+```
+npm install
+```
 
-&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+You're all done!
 
-&lt;p&gt;When running grunt sass:task it returns:&lt;/p&gt;
+## Troubleshooting
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-sass/issues/229&quot; target=&quot;_blank&quot;&gt;You need to have Ruby and Sass installed and in your PATH for this task to work.&lt;/a&gt;&lt;/p&gt;
+When running grunt sass:task it returns:
 
-&lt;p&gt;Fix:  &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install sass&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/gruntjs/grunt-contrib-sass/issues/229&quot; target=&quot;_blank&quot;&gt;You need to have Ruby and Sass installed and in your PATH for this task to work.&lt;/a&gt;
 
-&lt;p&gt;You need to have the sass gem installed.&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">Set up software on a CentOS machine so we can run Grunt.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+Fix:  ```gem install sass```
+
+You need to have the sass gem installed.</content><author><name>Adam</name></author><summary type="html">Set up software on a CentOS machine so we can run Grunt.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Need to tag your branch before you push to origin?
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;Within the branch you want to push to origin, before you push, follow these steps.&lt;/p&gt;
+Within the branch you want to push to origin, before you push, follow these steps.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch --tags
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git describe --tags
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git fetch --tags
+```
+```
+git describe --tags
+```
 
-&lt;p&gt;That will return to you the previous tag. Which you can now iterate and go up one version number. Of course it’ll only return a tag if it previously had one.&lt;/p&gt;
+That will return to you the previous tag. Which you can now iterate and go up one version number. Of course it'll only return a tag if it previously had one.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag -a tag-1.0.0 -m 'tag-1.0.0'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git tag -a tag-1.0.0 -m 'tag-1.0.0'
+```
 
-&lt;p&gt;Now you have to push the tags.&lt;/p&gt;
+Now you have to push the tags.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push --tags
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git push --tags
+```
 
-&lt;p&gt;Finally push everything up.&lt;/p&gt;
+Finally push everything up.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin branch_name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Adam</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry><entry><title type="html">How to git rebase a local branch</title><link href="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+```
+git push origin branch_name
+```</content><author><name>Adam</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry><entry><title type="html">How to git rebase a local branch</title><link href="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Need to rebase your local branch before creating a pull request?
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;lets-begin&quot;&gt;Lets begin&lt;/h2&gt;
+## Lets begin
 
-&lt;p&gt;Within your current local branch add all of your current changes, commit and push them to origin.&lt;/p&gt;
+Within your current local branch add all of your current changes, commit and push them to origin.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git add .
+```
+```
+git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
+```
+```
+git push origin mylocalbranch
+```
 
-&lt;p&gt;Checkout out to master and and pull origin&lt;/p&gt;
+Checkout out to master and and pull origin
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git checkout master
+```
+```
+git pull origin master
+```
 
-&lt;p&gt;Checkout back to your local branch and rebase from master. Then force push the changes to origin.&lt;/p&gt;
+Checkout back to your local branch and rebase from master. Then force push the changes to origin.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git rebase master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -f origin mylocalbranch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
+git checkout mylocalbranch
+```
+```
+git rebase master
+```
+```
+git push -f origin mylocalbranch
+```
 
 &lt;div class=&quot;alert alert-warning&quot;&gt;
 &lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Be careful!&lt;/h4&gt;
 &lt;p class=&quot;mb-0&quot;&gt;If someone else is working on the same branch as you 'force pushing' will lose their work. There is a safer way. Merging master into your branch will allow you to push without a force. However you will now have the problem of a messy git commit history. You can rebase interactively and squash your commits into a single commit to make it nice and tidy.&lt;/p&gt;
-&lt;hr /&gt;
+&lt;hr&gt;
 &lt;p class=&quot;mb-0&quot;&gt;
 Here is the stack overflow link to the question I read through &lt;a class=&quot;alert-link&quot; href=&quot;https://stackoverflow.com/questions/7929369/how-to-rebase-local-branch-with-remote-master&quot; target=&quot;_blank&quot;&gt;How to rebase local branch with remote master&lt;/a&gt;. I also read &lt;a class=&quot;alert-link&quot; href=&quot;https://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit&quot; target=&quot;_blank&quot;&gt;squash several Git commits into a single commit&lt;/a&gt; to learn how to clean up my local branches commit history before creating a pull request.&lt;/p&gt;
 &lt;/div&gt;</content><author><name>Adam</name></author><summary type="html">Need to rebase your local branch before creating a pull request?</summary></entry></feed>

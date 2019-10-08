@@ -25,5 +25,22 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - /assets/node_modules/
+  - /assets/images/src/
+  - /assets/Gruntfile.js
+  - /assets/package.json
+  - /assets/package-lock.json
+incremental: true # Incremental regeneration, speeds up serve time

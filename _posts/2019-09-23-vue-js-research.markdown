@@ -18,6 +18,16 @@ Some text.
 
 ### Caching
 
+#### Server side cache
+
+Caching is a commonly used technique to improve the performance of any application, be it desktop, mobile or web. When dealing with web applications we can make good use of client-side caching using response headers that all browsers currently support. But, what if we have a complex and heavy page that takes 2 second to generate the HTML output?Even if we enable client-side cache for this page, the web server will still need to render the page for each different user accessing our web application. Think about the home page of a large news portal; do they process their HTML over and over again for each visitor?
+
+This is where server-side cache comes in handy. The goal of server side cache is responding to the same content for the same request independently of the client’s request. In our example above, the first request that reaches our server would still take 2 seconds to generate the HTML, but the following requests would hit the cache instead and the server would be able to send the response in a few milliseconds.
+
+There are many ways of doing it, it could be done with NGINX or a CDN like CloudFlare, but in this example we’ll see how to do it with Node.js and Express with minimal work and in a flexible way.
+
+READ ABOUT CLOUDFRONT
+
 ### jQuery or Vue
 
 Did you know that you can incorporate Vue into your project the same way that you would incorporate jQuery. In this <a href='https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/' target='_blank'>article</a> they provide examples for capturing user inputs, storing user inputs, toggling classes, hiding and showing and submitting forms.
@@ -28,6 +38,8 @@ Due to Vue’s flexibility, it’s also easy to transition this code to a build 
 
 ### Bootstrap 5
 
+Bootstrap is removing jQuery as a dependency when using the framework. Moving over to using Vue.js and pure javascript is the move the industry is leaning towards.
+
 ### ExpressionEngine
 
 Having a thin PHP layer to still use what we have in place.
@@ -36,3 +48,4 @@ Having a thin PHP layer to still use what we have in place.
 
 <a href="https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/" target="blank">Vue.js And SEO: How To Optimize Reactive Websites For Search Engines And Bots</a><br>
 <a href="https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/" target="blank">Replacing jQuery With Vue.js: No Build Step Necessary</a><br>
+<a href="https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0" target="blank">Simple server side cache for Express.js with Node.js</a><br>
