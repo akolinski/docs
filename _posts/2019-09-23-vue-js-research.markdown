@@ -16,6 +16,10 @@ Some text.
 
 ### Search engine optimisation (SEO)
 
+#### Pre rendering 
+
+https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/
+
 ### Caching
 
 #### Server side cache
@@ -39,6 +43,12 @@ Did you know that you can incorporate Vue into your project the same way that yo
 It is definitely ok to use jQuery if it suits you! Vue is also a pretty nice abstraction for small sites that don’t need a lot of overhead. Vue is comparable in size, easy to reason about, and it’s fairly trivial to switch small pieces of functionality to Vue without rewriting your HTML in JavaScript.
 
 Due to Vue’s flexibility, it’s also easy to transition this code to a build step and component structures if you’d like to adopt a more complex structure over time. The nice thing about the flexibility to choose either way of incorporating Vue into your project means that you’re not pressed to change your style of working all at once, and you can even make changes slowly over time. This is why people call Vue the progressive framework.
+
+#### Podcast - Is jQuery Dead?
+
+https://open.spotify.com/episode/30wbbJzwfLhPoBiaW7RQdd
+
+We found....
 
 ### Bootstrap 5
 
