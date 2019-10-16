@@ -26,6 +26,10 @@ This is where server-side cache comes in handy. The goal of server side cache is
 
 There are many ways of doing it, it could be done with NGINX or a CDN like CloudFlare, but in this example we’ll see how to do it with Node.js and Express with minimal work and in a flexible way.
 
+https://ssr.vuejs.org/guide/caching.html?fbclid=IwAR2wyfGusDSa5iXPdEtBeGX6S8u9yKT4xs5txbQeFeWKpqW6RmzEB3RBOXw#page-level-caching
+
+https://ssr.vuejs.org/?fbclid=IwAR2zpbdskSPC-01RSMt109GpKo5QkNFpeyRCbXWrbn3_BLoHWTRZTSCeBS8#what-is-server-side-rendering-ssr
+
 READ ABOUT CLOUDFRONT
 
 ### jQuery or Vue
