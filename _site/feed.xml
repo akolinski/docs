@@ -1,61 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="https://akolinski.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://akolinski.github.io//" rel="alternate" type="text/html" /><updated>2019-10-17T09:41:01+11:00</updated><id>https://akolinski.github.io//feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
-</subtitle><author><name>Adam</name></author><entry><title type="html">Vue.js research</title><link href="https://akolinski.github.io//git/2019/09/23/vue-js-research.html" rel="alternate" type="text/html" title="Vue.js research" /><published>2019-09-23T09:00:00+10:00</published><updated>2019-09-23T09:00:00+10:00</updated><id>https://akolinski.github.io//git/2019/09/23/vue-js-research</id><content type="html" xml:base="https://akolinski.github.io//git/2019/09/23/vue-js-research.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-09T16:03:49+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><subtitle>Code, Design and User Experience (UX) related documentation.
+</subtitle><author><name>Adam</name></author><entry><title type="html">How to create a symbolic link</title><link href="http://localhost:4000/server/2019/12/08/how-to-create-a-symbolic-link.html" rel="alternate" type="text/html" title="How to create a symbolic link" /><published>2019-12-08T10:00:00+11:00</published><updated>2019-12-08T10:00:00+11:00</updated><id>http://localhost:4000/server/2019/12/08/how-to-create-a-symbolic-link</id><content type="html" xml:base="http://localhost:4000/server/2019/12/08/how-to-create-a-symbolic-link.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+    Symbolic links are basically advanced shortcuts. Create a symbolic link to an individual file or folder, and that link will appear to be the same as the file or folder to Windows—even though it’s just a link pointing at the file or folder.
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;lets-go&quot;&gt;Let’s go&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;cd /etc/httpd/conf.d&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;sudo !!&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;ln -s /usr/local/www/system/conf/system.conf system.conf&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;systemctl restart httpd&lt;/code&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">Symbolic links are basically advanced shortcuts. Create a symbolic link to an individual file or folder, and that link will appear to be the same as the file or folder to Windows—even though it’s just a link pointing at the file or folder.</summary></entry><entry><title type="html">Vue.js research</title><link href="http://localhost:4000/git/2019/09/23/vue-js-research.html" rel="alternate" type="text/html" title="Vue.js research" /><published>2019-09-23T09:00:00+10:00</published><updated>2019-09-23T09:00:00+10:00</updated><id>http://localhost:4000/git/2019/09/23/vue-js-research</id><content type="html" xml:base="http://localhost:4000/git/2019/09/23/vue-js-research.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+## Introduction
 
-&lt;p&gt;Some text.&lt;/p&gt;
+Some text.
 
-&lt;h3 id=&quot;search-engine-optimisation-seo&quot;&gt;Search engine optimisation (SEO)&lt;/h3&gt;
+### Search engine optimisation (SEO)
 
-&lt;h4 id=&quot;pre-rendering&quot;&gt;Pre rendering&lt;/h4&gt;
+#### Pre rendering 
 
-&lt;p&gt;https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/&lt;/p&gt;
+https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/
 
-&lt;h3 id=&quot;caching&quot;&gt;Caching&lt;/h3&gt;
+### Caching
 
-&lt;h4 id=&quot;server-side-cache&quot;&gt;Server side cache&lt;/h4&gt;
+#### Server side cache
 
-&lt;p&gt;Caching is a commonly used technique to improve the performance of any application, be it desktop, mobile or web. When dealing with web applications we can make good use of client-side caching using response headers that all browsers currently support. But, what if we have a complex and heavy page that takes 2 second to generate the HTML output?Even if we enable client-side cache for this page, the web server will still need to render the page for each different user accessing our web application. Think about the home page of a large news portal; do they process their HTML over and over again for each visitor?&lt;/p&gt;
+Caching is a commonly used technique to improve the performance of any application, be it desktop, mobile or web. When dealing with web applications we can make good use of client-side caching using response headers that all browsers currently support. But, what if we have a complex and heavy page that takes 2 second to generate the HTML output?Even if we enable client-side cache for this page, the web server will still need to render the page for each different user accessing our web application. Think about the home page of a large news portal; do they process their HTML over and over again for each visitor?
 
-&lt;p&gt;This is where server-side cache comes in handy. The goal of server side cache is responding to the same content for the same request independently of the client’s request. In our example above, the first request that reaches our server would still take 2 seconds to generate the HTML, but the following requests would hit the cache instead and the server would be able to send the response in a few milliseconds.&lt;/p&gt;
+This is where server-side cache comes in handy. The goal of server side cache is responding to the same content for the same request independently of the client’s request. In our example above, the first request that reaches our server would still take 2 seconds to generate the HTML, but the following requests would hit the cache instead and the server would be able to send the response in a few milliseconds.
 
-&lt;p&gt;There are many ways of doing it, it could be done with NGINX or a CDN like CloudFlare, but in this example we’ll see how to do it with Node.js and Express with minimal work and in a flexible way.&lt;/p&gt;
+There are many ways of doing it, it could be done with NGINX or a CDN like CloudFlare, but in this example we’ll see how to do it with Node.js and Express with minimal work and in a flexible way.
 
-&lt;p&gt;https://ssr.vuejs.org/guide/caching.html?fbclid=IwAR2wyfGusDSa5iXPdEtBeGX6S8u9yKT4xs5txbQeFeWKpqW6RmzEB3RBOXw#page-level-caching&lt;/p&gt;
+https://ssr.vuejs.org/guide/caching.html?fbclid=IwAR2wyfGusDSa5iXPdEtBeGX6S8u9yKT4xs5txbQeFeWKpqW6RmzEB3RBOXw#page-level-caching
 
-&lt;p&gt;https://ssr.vuejs.org/?fbclid=IwAR2zpbdskSPC-01RSMt109GpKo5QkNFpeyRCbXWrbn3_BLoHWTRZTSCeBS8#what-is-server-side-rendering-ssr&lt;/p&gt;
+https://ssr.vuejs.org/?fbclid=IwAR2zpbdskSPC-01RSMt109GpKo5QkNFpeyRCbXWrbn3_BLoHWTRZTSCeBS8#what-is-server-side-rendering-ssr
 
-&lt;p&gt;READ ABOUT CLOUDFRONT&lt;/p&gt;
+READ ABOUT CLOUDFRONT
 
-&lt;h3 id=&quot;jquery-or-vue&quot;&gt;jQuery or Vue&lt;/h3&gt;
+### jQuery or Vue
 
-&lt;p&gt;Did you know that you can incorporate Vue into your project the same way that you would incorporate jQuery. In this &lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;_blank&quot;&gt;article&lt;/a&gt; they provide examples for capturing user inputs, storing user inputs, toggling classes, hiding and showing and submitting forms.&lt;/p&gt;
+Did you know that you can incorporate Vue into your project the same way that you would incorporate jQuery. In this &lt;a href='https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/' target='_blank'&gt;article&lt;/a&gt; they provide examples for capturing user inputs, storing user inputs, toggling classes, hiding and showing and submitting forms.
 
-&lt;p&gt;It is definitely ok to use jQuery if it suits you! Vue is also a pretty nice abstraction for small sites that don’t need a lot of overhead. Vue is comparable in size, easy to reason about, and it’s fairly trivial to switch small pieces of functionality to Vue without rewriting your HTML in JavaScript.&lt;/p&gt;
+It is definitely ok to use jQuery if it suits you! Vue is also a pretty nice abstraction for small sites that don’t need a lot of overhead. Vue is comparable in size, easy to reason about, and it’s fairly trivial to switch small pieces of functionality to Vue without rewriting your HTML in JavaScript.
 
-&lt;p&gt;Due to Vue’s flexibility, it’s also easy to transition this code to a build step and component structures if you’d like to adopt a more complex structure over time. The nice thing about the flexibility to choose either way of incorporating Vue into your project means that you’re not pressed to change your style of working all at once, and you can even make changes slowly over time. This is why people call Vue the progressive framework.&lt;/p&gt;
+Due to Vue’s flexibility, it’s also easy to transition this code to a build step and component structures if you’d like to adopt a more complex structure over time. The nice thing about the flexibility to choose either way of incorporating Vue into your project means that you’re not pressed to change your style of working all at once, and you can even make changes slowly over time. This is why people call Vue the progressive framework.
 
-&lt;h4 id=&quot;podcast---is-jquery-dead&quot;&gt;Podcast - Is jQuery Dead?&lt;/h4&gt;
+#### Podcast - Is jQuery Dead?
 
-&lt;p&gt;https://open.spotify.com/episode/30wbbJzwfLhPoBiaW7RQdd&lt;/p&gt;
+https://open.spotify.com/episode/30wbbJzwfLhPoBiaW7RQdd
 
-&lt;p&gt;We found….&lt;/p&gt;
+We found....
 
-&lt;h3 id=&quot;bootstrap-5&quot;&gt;Bootstrap 5&lt;/h3&gt;
+### Bootstrap 5
 
-&lt;p&gt;Bootstrap is removing jQuery as a dependency when using the framework. Moving over to using Vue.js and pure javascript is the move the industry is leaning towards.&lt;/p&gt;
+Bootstrap is removing jQuery as a dependency when using the framework. Moving over to using Vue.js and pure javascript is the move the industry is leaning towards.
 
-&lt;h3 id=&quot;expressionengine&quot;&gt;ExpressionEngine&lt;/h3&gt;
+### ExpressionEngine
 
-&lt;p&gt;Having a thin PHP layer to still use what we have in place.&lt;/p&gt;
+Having a thin PHP layer to still use what we have in place.
 
-&lt;h4 id=&quot;references&quot;&gt;References&lt;/h4&gt;
+#### References
 
-&lt;p&gt;&lt;a href=&quot;https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/&quot; target=&quot;blank&quot;&gt;Vue.js And SEO: How To Optimize Reactive Websites For Search Engines And Bots&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;blank&quot;&gt;Replacing jQuery With Vue.js: No Build Step Necessary&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0&quot; target=&quot;blank&quot;&gt;Simple server side cache for Express.js with Node.js&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Adam</name></author><summary type="html">We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.</summary></entry><entry><title type="html">How to set up a Vue.js project</title><link href="https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project.html" rel="alternate" type="text/html" title="How to set up a Vue.js project" /><published>2019-02-15T10:00:00+11:00</published><updated>2019-02-15T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project</id><content type="html" xml:base="https://akolinski.github.io//git/2019/02/15/how-to-set-up-a-vue-js-project.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2019/05/vue-js-seo-reactive-websites-search-engines-bots/&quot; target=&quot;blank&quot;&gt;Vue.js And SEO: How To Optimize Reactive Websites For Search Engines And Bots&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2018/02/jquery-vue-javascript/&quot; target=&quot;blank&quot;&gt;Replacing jQuery With Vue.js: No Build Step Necessary&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0&quot; target=&quot;blank&quot;&gt;Simple server side cache for Express.js with Node.js&lt;/a&gt;&lt;br&gt;</content><author><name>Adam</name></author><summary type="html">We are going to cover topics such as SEO, SSR and much more to help solve questions when moving over to using Javascript Frameworks such as Vue, React or Angular.</summary></entry><entry><title type="html">How to set up a Vue.js project</title><link href="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html" rel="alternate" type="text/html" title="How to set up a Vue.js project" /><published>2019-02-15T10:00:00+11:00</published><updated>2019-02-15T10:00:00+11:00</updated><id>http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project</id><content type="html" xml:base="http://localhost:4000/git/2019/02/15/how-to-set-up-a-vue-js-project.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.
 &lt;/blockquote&gt;
 
@@ -124,7 +133,7 @@ There you have it and that's how we get a vue.js project started.
 
 &lt;a href=&quot;https://vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue.js&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://cli.vuejs.org/&quot; target=&quot;blank&quot;&gt;Vue Cli 3 documentation&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://bootstrap-vue.js.org/&quot; target=&quot;blank&quot;&gt;Integrated Bootstrap framework&lt;/a&gt;&lt;br&gt;</content><author><name>Adam</name></author><summary type="html">Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.</summary></entry><entry><title type="html">How to check for registered submodules</title><link href="https://akolinski.github.io//git/2018/10/24/how-to-check-for-registered-submodules.html" rel="alternate" type="text/html" title="How to check for registered submodules" /><published>2018-10-24T10:00:00+11:00</published><updated>2018-10-24T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2018/10/24/how-to-check-for-registered-submodules</id><content type="html" xml:base="https://akolinski.github.io//git/2018/10/24/how-to-check-for-registered-submodules.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;a href=&quot;https://bootstrap-vue.js.org/&quot; target=&quot;blank&quot;&gt;Integrated Bootstrap framework&lt;/a&gt;&lt;br&gt;</content><author><name>Adam</name></author><summary type="html">Lets get a Vue.js project up and running, you know so we can bake up some awesome websites.</summary></entry><entry><title type="html">How to check for registered submodules</title><link href="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html" rel="alternate" type="text/html" title="How to check for registered submodules" /><published>2018-10-24T10:00:00+11:00</published><updated>2018-10-24T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules</id><content type="html" xml:base="http://localhost:4000/git/2018/10/24/how-to-check-for-registered-submodules.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may need to check what submodules are registered.
 &lt;/blockquote&gt;
 
@@ -156,7 +165,7 @@ Try the update submodule command again and everything will be dandy!
 &lt;br&gt;
 ### Reference
 
-&lt;a href=&quot;https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule&quot; target=&quot;blank&quot;&gt;No submodule mapping found in .gitmodule for a path that's not a submodule&lt;/a&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may need to check what submodules are registered.</summary></entry><entry><title type="html">How to make changes to a submodule in git</title><link href="https://akolinski.github.io//git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to make changes to a submodule in git" /><published>2018-10-22T10:00:00+11:00</published><updated>2018-10-22T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2018/10/22/how-to-make-changes-to-a-submodule-in-git</id><content type="html" xml:base="https://akolinski.github.io//git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule&quot; target=&quot;blank&quot;&gt;No submodule mapping found in .gitmodule for a path that's not a submodule&lt;/a&gt;</content><author><name>Adam</name></author><summary type="html">When working in a repository you may need to check what submodules are registered.</summary></entry><entry><title type="html">How to make changes to a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to make changes to a submodule in git" /><published>2018-10-22T10:00:00+11:00</published><updated>2018-10-22T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-make-changes-to-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.
 &lt;/blockquote&gt;
 
@@ -212,7 +221,7 @@ git commit -m &quot;Changed hash to correct hash&quot;
 git push origin &lt;branch_name&gt;
 ```
 
-There we have it, the hash for the add_on will now be correct. Go to the repository and view the folder and the hash should show as correct.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.</summary></entry><entry><title type="html">How to add a submodule in git</title><link href="https://akolinski.github.io//git/2018/10/22/how-to-add-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to add a submodule in git" /><published>2018-10-22T09:00:00+11:00</published><updated>2018-10-22T09:00:00+11:00</updated><id>https://akolinski.github.io//git/2018/10/22/how-to-add-a-submodule-in-git</id><content type="html" xml:base="https://akolinski.github.io//git/2018/10/22/how-to-add-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+There we have it, the hash for the add_on will now be correct. Go to the repository and view the folder and the hash should show as correct.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may be version controlling a separate folder using a submodule. This is how to make a change and then push that change in the repo.</summary></entry><entry><title type="html">How to add a submodule in git</title><link href="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html" rel="alternate" type="text/html" title="How to add a submodule in git" /><published>2018-10-22T09:00:00+11:00</published><updated>2018-10-22T09:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git</id><content type="html" xml:base="http://localhost:4000/git/2018/10/22/how-to-add-a-submodule-in-git.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     When working in a repository you may want to version control a separate folder, this is how to do it.
 &lt;/blockquote&gt;
 
@@ -328,7 +337,7 @@ git commit –m &quot;Adding submodule&quot;
 git push origin &lt;branch_name&gt;
 ```
 
-That's it we have added a submodule to our project.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may want to version control a separate folder, this is how to do it.</summary></entry><entry><title type="html">How to create a git patch</title><link href="https://akolinski.github.io//git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="https://akolinski.github.io//git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+That's it we have added a submodule to our project.</content><author><name>Adam</name></author><summary type="html">When working in a repository you may want to version control a separate folder, this is how to do it.</summary></entry><entry><title type="html">How to create a git patch</title><link href="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html" rel="alternate" type="text/html" title="How to create a git patch" /><published>2018-10-18T10:00:00+11:00</published><updated>2018-10-18T10:00:00+11:00</updated><id>http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch</id><content type="html" xml:base="http://localhost:4000/git/2018/10/18/how-to-create-a-git-patch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Creating a patch in GIT can help apply changes with the use of a command.
 &lt;/blockquote&gt;
 
@@ -360,7 +369,7 @@ git apply patch_file
 
 ```
 git apply -R patch_file
-```</content><author><name>Adam</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="https://akolinski.github.io//git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>https://akolinski.github.io//git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="https://akolinski.github.io//git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+```</content><author><name>Adam</name></author><summary type="html">Creating a patch in GIT can help apply changes with the use of a command.</summary></entry><entry><title type="html">How to reset a branch to a previous commit</title><link href="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html" rel="alternate" type="text/html" title="How to reset a branch to a previous commit" /><published>2018-07-19T09:00:00+10:00</published><updated>2018-07-19T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit</id><content type="html" xml:base="http://localhost:4000/git/2018/07/19/how-to-reset-a-branch-to-a-previous-commit.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Sometimes you might have committed and pushed something that you need to revert. No worries!
 &lt;/blockquote&gt;
 
@@ -382,7 +391,7 @@ Then you need to force push the change on the branch.
 
 ```
 git push -f origin [branch_name]
-```</content><author><name>Adam</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="https://akolinski.github.io//git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>https://akolinski.github.io//git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="https://akolinski.github.io//git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+```</content><author><name>Adam</name></author><summary type="html">Sometimes you might have committed and pushed something that you need to revert. No worries!</summary></entry><entry><title type="html">RVM, Linuxbrew, Node NPM, Grunt</title><link href="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html" rel="alternate" type="text/html" title="RVM, Linuxbrew, Node NPM, Grunt" /><published>2018-05-08T09:00:00+10:00</published><updated>2018-05-08T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt</id><content type="html" xml:base="http://localhost:4000/git/2018/05/08/rvm-linuxbrew-node-npm-grunt.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
     Set up software on a CentOS machine so we can run Grunt.
 &lt;/blockquote&gt;
 
@@ -442,7 +451,7 @@ When running grunt sass:task it returns:
 
 Fix:  ```gem install sass```
 
-You need to have the sass gem installed.</content><author><name>Adam</name></author><summary type="html">Set up software on a CentOS machine so we can run Grunt.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="https://akolinski.github.io//git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>https://akolinski.github.io//git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="https://akolinski.github.io//git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
+You need to have the sass gem installed.</content><author><name>Adam</name></author><summary type="html">Set up software on a CentOS machine so we can run Grunt.</summary></entry><entry><title type="html">How to git tag a branch</title><link href="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html" rel="alternate" type="text/html" title="How to git tag a branch" /><published>2018-04-01T09:00:00+10:00</published><updated>2018-04-01T09:00:00+10:00</updated><id>http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch</id><content type="html" xml:base="http://localhost:4000/git/2018/04/01/how-to-git-tag-a-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
 Need to tag your branch before you push to origin?
 &lt;/blockquote&gt;
 
@@ -473,49 +482,4 @@ Finally push everything up.
 
 ```
 git push origin branch_name
-```</content><author><name>Adam</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry><entry><title type="html">How to git rebase a local branch</title><link href="https://akolinski.github.io//git/2018/03/06/how-to-git-rebase-a-local-branch.html" rel="alternate" type="text/html" title="How to git rebase a local branch" /><published>2018-03-06T10:00:00+11:00</published><updated>2018-03-06T10:00:00+11:00</updated><id>https://akolinski.github.io//git/2018/03/06/how-to-git-rebase-a-local-branch</id><content type="html" xml:base="https://akolinski.github.io//git/2018/03/06/how-to-git-rebase-a-local-branch.html">&lt;blockquote class=&quot;blockquote&quot;&gt;
-Need to rebase your local branch before creating a pull request?
-&lt;/blockquote&gt;
-
-## Lets begin
-
-Within your current local branch add all of your current changes, commit and push them to origin.
-
-```
-git add .
-```
-```
-git commit -m &quot;My wonderful message to help understanding the feature developed&quot;
-```
-```
-git push origin mylocalbranch
-```
-
-Checkout out to master and and pull origin
-
-```
-git checkout master
-```
-```
-git pull origin master
-```
-
-Checkout back to your local branch and rebase from master. Then force push the changes to origin.
-
-```
-git checkout mylocalbranch
-```
-```
-git rebase master
-```
-```
-git push -f origin mylocalbranch
-```
-
-&lt;div class=&quot;alert alert-warning&quot;&gt;
-&lt;h4 class=&quot;alert-heading mt-2 mb-3&quot;&gt;&lt;i class=&quot;fas fa-exclamation-circle mr-2&quot;&gt;&lt;/i&gt; Be careful!&lt;/h4&gt;
-&lt;p class=&quot;mb-0&quot;&gt;If someone else is working on the same branch as you 'force pushing' will lose their work. There is a safer way. Merging master into your branch will allow you to push without a force. However you will now have the problem of a messy git commit history. You can rebase interactively and squash your commits into a single commit to make it nice and tidy.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p class=&quot;mb-0&quot;&gt;
-Here is the stack overflow link to the question I read through &lt;a class=&quot;alert-link&quot; href=&quot;https://stackoverflow.com/questions/7929369/how-to-rebase-local-branch-with-remote-master&quot; target=&quot;_blank&quot;&gt;How to rebase local branch with remote master&lt;/a&gt;. I also read &lt;a class=&quot;alert-link&quot; href=&quot;https://makandracards.com/makandra/527-squash-several-git-commits-into-a-single-commit&quot; target=&quot;_blank&quot;&gt;squash several Git commits into a single commit&lt;/a&gt; to learn how to clean up my local branches commit history before creating a pull request.&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Adam</name></author><summary type="html">Need to rebase your local branch before creating a pull request?</summary></entry></feed>
+```</content><author><name>Adam</name></author><summary type="html">Need to tag your branch before you push to origin?</summary></entry></feed>
